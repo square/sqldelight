@@ -140,10 +140,10 @@ class MutatorQueryFunctionTest {
 
     assertThat(generator.function().toString()).isEqualTo("""
       |override fun updateData(newValue: kotlin.collections.List?, oldValue: kotlin.collections.List?) {
-      |  driver.execute(null, ""${'"'}
+      |  driver.execute(${update.id}, ""${'"'}
       |  |UPDATE data
       |  |SET value = ?
-      |  |WHERE value ${"$"}{ if (oldValue == null) "IS" else "=" } ?
+      |  |WHERE value = ?
       |  ""${'"'}.trimMargin(), 2) {
       |    bindString(1, newValue?.let { database.dataAdapter.valueAdapter.encode(it) })
       |    bindString(2, oldValue?.let { database.dataAdapter.valueAdapter.encode(it) })
