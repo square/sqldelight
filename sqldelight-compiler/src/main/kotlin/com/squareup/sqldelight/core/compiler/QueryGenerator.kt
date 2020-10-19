@@ -1,9 +1,7 @@
 package com.squareup.sqldelight.core.compiler
 
-import com.alecstrong.sql.psi.core.psi.SqlBinaryEqualityExpr
 import com.alecstrong.sql.psi.core.psi.SqlBindExpr
 import com.alecstrong.sql.psi.core.psi.SqlStmt
-import com.alecstrong.sql.psi.core.psi.SqlTypes
 import com.intellij.psi.PsiElement
 import com.intellij.psi.PsiWhiteSpace
 import com.intellij.psi.util.PsiTreeUtil
@@ -15,7 +13,6 @@ import com.squareup.sqldelight.core.compiler.model.BindableQuery
 import com.squareup.sqldelight.core.compiler.model.NamedExecute
 import com.squareup.sqldelight.core.compiler.model.NamedQuery
 import com.squareup.sqldelight.core.lang.DRIVER_NAME
-import com.squareup.sqldelight.core.lang.util.childOfType
 import com.squareup.sqldelight.core.lang.util.findChildrenOfType
 import com.squareup.sqldelight.core.lang.util.isArrayParameter
 import com.squareup.sqldelight.core.lang.util.range
@@ -128,24 +125,6 @@ abstract class QueryGenerator(private val query: BindableQuery) {
         argumentCounts.add("${type.name}.size")
       } else {
         nonArrayBindArgsCount += 1
-        if (type.javaType.isNullable) {
-          val parent = bindArg?.parent
-          if (parent is SqlBinaryEqualityExpr) {
-            needsFreshStatement = true
-
-            var symbol = parent.childOfType(SqlTypes.EQ) ?: parent.childOfType(SqlTypes.EQ2)
-            val nullableEquality: String
-            if (symbol != null) {
-              nullableEquality = "${symbol.leftWhitspace()}IS${symbol.rightWhitespace()}"
-            } else {
-              symbol = parent.childOfType(SqlTypes.NEQ) ?: parent.childOfType(SqlTypes.NEQ2)!!
-              nullableEquality = "${symbol.leftWhitspace()}IS NOT${symbol.rightWhitespace()}"
-            }
-
-            val block = CodeBlock.of("if (${type.name} == null) \"$nullableEquality\" else \"${symbol.text}\"")
-            replacements.add(symbol.range to "\${ $block }")
-          }
-        }
         // Binds each parameter to the statement:
         // statement.bindLong(1, id)
         bindStatements.add(type.preparedStatementBinder(offset))

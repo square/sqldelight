@@ -196,7 +196,7 @@ class SelectQueryTypeTest {
        |  val userId: kotlin.String?,
        |  mapper: (com.squareup.sqldelight.db.SqlCursor) -> T
        |) : com.squareup.sqldelight.Query<T>(select_news_list, mapper) {
-       |  override fun execute(): com.squareup.sqldelight.db.SqlCursor = driver.executeQuery(null, ""${'"'}SELECT * FROM socialFeedItem WHERE message IS NOT NULL AND userId ${"$"}{ if (userId == null) "IS" else "=" } ? ORDER BY datetime(creation_time) DESC""${'"'}, 1) {
+       |  override fun execute(): com.squareup.sqldelight.db.SqlCursor = driver.executeQuery(${query.id}, ""${'"'}SELECT * FROM socialFeedItem WHERE message IS NOT NULL AND userId = ? ORDER BY datetime(creation_time) DESC""${'"'}, 1) {
        |    bindString(1, userId)
        |  }
        |
@@ -230,10 +230,10 @@ class SelectQueryTypeTest {
        |  val username: kotlin.String,
        |  mapper: (com.squareup.sqldelight.db.SqlCursor) -> T
        |) : com.squareup.sqldelight.Query<T>(selectData, mapper) {
-       |  override fun execute(): com.squareup.sqldelight.db.SqlCursor = driver.executeQuery(null, ""${'"'}
+       |  override fun execute(): com.squareup.sqldelight.db.SqlCursor = driver.executeQuery(${query.id}, ""${'"'}
        |  |SELECT _id, username
        |  |FROM Friend
-       |  |WHERE userId${'$'}{ if (userId == null) " IS " else "=" }? OR username=? LIMIT 2
+       |  |WHERE userId=? OR username=? LIMIT 2
        |  ""${'"'}.trimMargin(), 2) {
        |    bindString(1, userId)
        |    bindString(2, username)
@@ -257,7 +257,9 @@ class SelectQueryTypeTest {
       |WHERE val = ?
       |AND val == ?
       |AND val <> ?
-      |AND val != ?;
+      |AND val != ?
+      |AND val IS ?
+      |AND val IS NOT ?;
       |""".trimMargin(), tempFolder)
 
     val query = file.namedQueries.first()
@@ -273,20 +275,28 @@ class SelectQueryTypeTest {
       |  val val___: kotlin.String?,
       |  @kotlin.jvm.JvmField
       |  val val____: kotlin.String?,
+      |  @kotlin.jvm.JvmField
+      |  val val_____: kotlin.String?,
+      |  @kotlin.jvm.JvmField
+      |  val val______: kotlin.String?,
       |  mapper: (com.squareup.sqldelight.db.SqlCursor) -> T
       |) : com.squareup.sqldelight.Query<T>(selectForId, mapper) {
-      |  override fun execute(): com.squareup.sqldelight.db.SqlCursor = driver.executeQuery(null, ""${'"'}
+      |  override fun execute(): com.squareup.sqldelight.db.SqlCursor = driver.executeQuery(${query.id}, ""${'"'}
       |  |SELECT *
       |  |FROM data
-      |  |WHERE val ${"$"}{ if (val_ == null) "IS" else "=" } ?
-      |  |AND val ${"$"}{ if (val__ == null) "IS" else "==" } ?
-      |  |AND val ${"$"}{ if (val___ == null) "IS NOT" else "<>" } ?
-      |  |AND val ${"$"}{ if (val____ == null) "IS NOT" else "!=" } ?
-      |  ""${'"'}.trimMargin(), 4) {
+      |  |WHERE val = ?
+      |  |AND val == ?
+      |  |AND val <> ?
+      |  |AND val != ?
+      |  |AND val IS ?
+      |  |AND val IS NOT ?
+      |  ""${'"'}.trimMargin(), 6) {
       |    bindString(1, val_)
       |    bindString(2, val__)
       |    bindString(3, val___)
       |    bindString(4, val____)
+      |    bindString(5, val_____)
+      |    bindString(6, val______)
       |  }
       |
       |  override fun toString(): kotlin.String = "Test.sq:selectForId"
@@ -442,7 +452,8 @@ class SelectQueryTypeTest {
       |OFFSET :offset;
       |""".trimMargin(), tempFolder)
 
-    val generator = SelectQueryGenerator(file.namedQueries.first())
+    val query = file.namedQueries.first()
+    val generator = SelectQueryGenerator(query)
 
     assertThat(generator.querySubtype().toString()).isEqualTo("""
       |private inner class SelectForIdQuery<out T : kotlin.Any>(
@@ -454,11 +465,11 @@ class SelectQueryTypeTest {
       |  val offset: kotlin.Long,
       |  mapper: (com.squareup.sqldelight.db.SqlCursor) -> T
       |) : com.squareup.sqldelight.Query<T>(selectForId, mapper) {
-      |  override fun execute(): com.squareup.sqldelight.db.SqlCursor = driver.executeQuery(null, ""${'"'}
-      |  |WITH child_ids AS (SELECT id FROM data WHERE id ${'$'}{ if (id == null) "IS" else "=" } ?)
+      |  override fun execute(): com.squareup.sqldelight.db.SqlCursor = driver.executeQuery(${query.id}, ""${'"'}
+      |  |WITH child_ids AS (SELECT id FROM data WHERE id = ?)
       |  |SELECT *
       |  |FROM data
-      |  |WHERE id ${'$'}{ if (id == null) "IS" else "=" } ? OR id IN child_ids
+      |  |WHERE id = ? OR id IN child_ids
       |  |LIMIT ?
       |  |OFFSET ?
       |  ""${'"'}.trimMargin(), 4) {
@@ -536,10 +547,10 @@ class SelectQueryTypeTest {
       |  val token: kotlin.String?,
       |  mapper: (com.squareup.sqldelight.db.SqlCursor) -> T
       |) : com.squareup.sqldelight.Query<T>(selectByTokenOrAll, mapper) {
-      |  override fun execute(): com.squareup.sqldelight.db.SqlCursor = driver.executeQuery(null, ""${'"'}
+      |  override fun execute(): com.squareup.sqldelight.db.SqlCursor = driver.executeQuery(${query.id}, ""${'"'}
       |  |SELECT *
       |  |FROM data
-      |  |WHERE token ${"$"}{ if (token == null) "IS" else "=" } ? OR ? IS NULL
+      |  |WHERE token = ? OR ? IS NULL
       |  ""${'"'}.trimMargin(), 2) {
       |    bindString(1, token)
       |    bindString(2, token)
