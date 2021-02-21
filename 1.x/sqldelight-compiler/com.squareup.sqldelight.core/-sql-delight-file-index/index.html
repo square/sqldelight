@@ -21,7 +21,7 @@
     
     
       
-        <title>SqlDelightFileIndex - SQLDelight - SQLDelight</title>
+        <title>SqlDelightFileIndex   - SQLDelight - SQLDelight</title>
       
     
     
@@ -93,7 +93,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              SqlDelightFileIndex - SQLDelight
+              SqlDelightFileIndex   - SQLDelight
             
           </span>
         </div>
@@ -2496,8 +2496,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
-    Properties
+  <a href="#types" class="md-nav__link">
+    Types
   </a>
   
 </li>
@@ -2510,8 +2510,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#companion-object-functions" class="md-nav__link">
-    Companion Object Functions
+  <a href="#properties" class="md-nav__link">
+    Properties
   </a>
   
 </li>
@@ -2536,10 +2536,10 @@
                   
                 
                 
-                <p><a href="../../">sqldelight-compiler</a> / <a href="../">com.squareup.sqldelight.core</a> / <a href="./">SqlDelightFileIndex</a></p>
+                <p>//<a href="../../">sqldelight-compiler</a>/<a href="../">com.squareup.sqldelight.core</a>/<a href="./">SqlDelightFileIndex</a></p>
 <h1 id="sqldelightfileindex">SqlDelightFileIndex</h1>
-<p><code>interface SqlDelightFileIndex</code></p>
-<h3 id="properties">Properties</h3>
+<p>[jvm] interface <a href="./">SqlDelightFileIndex</a>   </p>
+<h2 id="types">Types</h2>
 <table>
 <thead>
 <tr>
@@ -2549,36 +2549,12 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="class-name/">className</a></td>
-<td><code>abstract val className:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><code>String</code></a></td>
-</tr>
-<tr>
-<td><a href="content-root/">contentRoot</a></td>
-<td><code>abstract val contentRoot: VirtualFile</code></td>
-</tr>
-<tr>
-<td><a href="dependencies/">dependencies</a></td>
-<td><code>abstract val dependencies:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><code>List</code></a><code>&lt;</code><a href="../-sql-delight-database-name/"><code>SqlDelightDatabaseName</code></a><code>&gt;</code></td>
-</tr>
-<tr>
-<td><a href="derive-schema-from-migrations/">deriveSchemaFromMigrations</a></td>
-<td><code>abstract val deriveSchemaFromMigrations:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><code>Boolean</code></a></td>
-</tr>
-<tr>
-<td><a href="is-configured/">isConfigured</a></td>
-<td><code>abstract val isConfigured:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><code>Boolean</code></a></td>
-</tr>
-<tr>
-<td><a href="output-directory/">outputDirectory</a></td>
-<td><code>abstract val outputDirectory:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><code>String</code></a></td>
-</tr>
-<tr>
-<td><a href="package-name/">packageName</a></td>
-<td><code>abstract val packageName:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><code>String</code></a></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightFileIndex.Companion///PointingToDeclaration/"></a><a href="-companion/">Companion</a></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightFileIndex.Companion///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>object <a href="-companion/">Companion</a>  <br><br><br></td>
 </tr>
 </tbody>
 </table>
-<h3 id="functions">Functions</h3>
+<h2 id="functions">Functions</h2>
 <table>
 <thead>
 <tr>
@@ -2588,16 +2564,28 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="package-name/">packageName</a></td>
-<td><code>abstract fun packageName(file:</code><a href="../../com.squareup.sqldelight.core.lang/-sql-delight-file/"><code>SqlDelightFile</code></a><code>):</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><code>String</code></a></td>
+<td><a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a><a href="../../com.squareup.sqldelight.core.lang.psi/-stmt-identifier-mixin/#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F-667256284">equals</a></td>
+<td><a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open operator fun <a href="../../com.squareup.sqldelight.core.lang.psi/-stmt-identifier-mixin/#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F-667256284">equals</a>(other: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>?): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>  <br><br><br></td>
 </tr>
 <tr>
-<td><a href="source-folders/">sourceFolders</a></td>
-<td><code>abstract fun sourceFolders(file: VirtualFile, includeDependencies:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><code>Boolean</code></a><code>= true):</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><code>Collection</code></a><code>&lt;VirtualFile&gt;</code><br><code>abstract fun sourceFolders(file:</code><a href="../../com.squareup.sqldelight.core.lang/-sql-delight-file/"><code>SqlDelightFile</code></a><code>, includeDependencies:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><code>Boolean</code></a><code>= true):</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><code>Collection</code></a><code>&lt;PsiDirectory&gt;</code></td>
+<td><a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a><a href="../../com.squareup.sqldelight.core.lang.psi/-stmt-identifier-mixin/#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-667256284">hashCode</a></td>
+<td><a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open fun <a href="../../com.squareup.sqldelight.core.lang.psi/-stmt-identifier-mixin/#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-667256284">hashCode</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="com.squareup.sqldelight.core/SqlDelightFileIndex/packageName/#com.squareup.sqldelight.core.lang.SqlDelightFile/PointingToDeclaration/"></a><a href="package-name/">packageName</a></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightFileIndex/packageName/#com.squareup.sqldelight.core.lang.SqlDelightFile/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>abstract fun <a href="package-name/">packageName</a>(file: <a href="../../com.squareup.sqldelight.core.lang/-sql-delight-file/">SqlDelightFile</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="com.squareup.sqldelight.core/SqlDelightFileIndex/sourceFolders/#com.intellij.openapi.vfs.VirtualFile#kotlin.Boolean/PointingToDeclaration/"></a><a href="source-folders/">sourceFolders</a></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightFileIndex/sourceFolders/#com.intellij.openapi.vfs.VirtualFile#kotlin.Boolean/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>abstract fun <a href="source-folders/">sourceFolders</a>(file: VirtualFile, includeDependencies: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> = true): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html">Collection</a><VirtualFile>  <br>abstract fun <a href="source-folders/">sourceFolders</a>(file: <a href="../../com.squareup.sqldelight.core.lang/-sql-delight-file/">SqlDelightFile</a>, includeDependencies: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> = true): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html">Collection</a><PsiDirectory>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="kotlin/Any/toString/#/PointingToDeclaration/"></a><a href="../../com.squareup.sqldelight.core.lang.psi/-stmt-identifier/#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-667256284">toString</a></td>
+<td><a name="kotlin/Any/toString/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open fun <a href="../../com.squareup.sqldelight.core.lang.psi/-stmt-identifier/#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-667256284">toString</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>  <br><br><br></td>
 </tr>
 </tbody>
 </table>
-<h3 id="companion-object-functions">Companion Object Functions</h3>
+<h2 id="properties">Properties</h2>
 <table>
 <thead>
 <tr>
@@ -2607,12 +2595,32 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="get-instance/">getInstance</a></td>
-<td><code>fun getInstance(module: Module):</code><a href="./"><code>SqlDelightFileIndex</code></a></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightFileIndex/className/#/PointingToDeclaration/"></a><a href="class-name/">className</a></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightFileIndex/className/#/PointingToDeclaration/"></a> [jvm] abstract val <a href="class-name/">className</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>   <br></td>
 </tr>
 <tr>
-<td><a href="sanitize-directory-name/">sanitizeDirectoryName</a></td>
-<td><code>fun sanitizeDirectoryName(name:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><code>String</code></a><code>):</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><code>String</code></a></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightFileIndex/contentRoot/#/PointingToDeclaration/"></a><a href="content-root/">contentRoot</a></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightFileIndex/contentRoot/#/PointingToDeclaration/"></a> [jvm] abstract val <a href="content-root/">contentRoot</a>: VirtualFile   <br></td>
+</tr>
+<tr>
+<td><a name="com.squareup.sqldelight.core/SqlDelightFileIndex/dependencies/#/PointingToDeclaration/"></a><a href="dependencies/">dependencies</a></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightFileIndex/dependencies/#/PointingToDeclaration/"></a> [jvm] abstract val <a href="dependencies/">dependencies</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="../-sql-delight-database-name/">SqlDelightDatabaseName</a>&gt;   <br></td>
+</tr>
+<tr>
+<td><a name="com.squareup.sqldelight.core/SqlDelightFileIndex/deriveSchemaFromMigrations/#/PointingToDeclaration/"></a><a href="derive-schema-from-migrations/">deriveSchemaFromMigrations</a></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightFileIndex/deriveSchemaFromMigrations/#/PointingToDeclaration/"></a> [jvm] abstract val <a href="derive-schema-from-migrations/">deriveSchemaFromMigrations</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>   <br></td>
+</tr>
+<tr>
+<td><a name="com.squareup.sqldelight.core/SqlDelightFileIndex/isConfigured/#/PointingToDeclaration/"></a><a href="is-configured/">isConfigured</a></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightFileIndex/isConfigured/#/PointingToDeclaration/"></a> [jvm] abstract val <a href="is-configured/">isConfigured</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>   <br></td>
+</tr>
+<tr>
+<td><a name="com.squareup.sqldelight.core/SqlDelightFileIndex/outputDirectory/#/PointingToDeclaration/"></a><a href="output-directory/">outputDirectory</a></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightFileIndex/outputDirectory/#/PointingToDeclaration/"></a> [jvm] abstract val <a href="output-directory/">outputDirectory</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>   <br></td>
+</tr>
+<tr>
+<td><a name="com.squareup.sqldelight.core/SqlDelightFileIndex/packageName/#/PointingToDeclaration/"></a><a href="package-name/">packageName</a></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightFileIndex/packageName/#/PointingToDeclaration/"></a> [jvm] abstract val <a href="package-name/">packageName</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>   <br></td>
 </tr>
 </tbody>
 </table>

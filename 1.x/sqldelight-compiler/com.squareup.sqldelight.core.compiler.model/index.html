@@ -21,7 +21,7 @@
     
     
       
-        <title>Package com.squareup.sqldelight.core.compiler.model - SQLDelight - SQLDelight</title>
+        <title>Package com.squareup.sqldelight.core.compiler.model   - SQLDelight - SQLDelight</title>
       
     
     
@@ -93,7 +93,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Package com.squareup.sqldelight.core.compiler.model - SQLDelight
+              Package com.squareup.sqldelight.core.compiler.model   - SQLDelight
             
           </span>
         </div>
@@ -2484,6 +2484,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon">
@@ -2494,22 +2496,9 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#package-comsquareupsqldelightcorecompilermodel" class="md-nav__link">
-    Package com.squareup.sqldelight.core.compiler.model
-  </a>
-  
-    <nav class="md-nav" aria-label="Package com.squareup.sqldelight.core.compiler.model">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#types" class="md-nav__link">
     Types
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2533,11 +2522,9 @@
                   
                 
                 
-                  <h1>Package com.squareup.sqldelight.core.compiler.model - SQLDelight</h1>
-                
-                <p><a href="../">sqldelight-compiler</a> / <a href="./">com.squareup.sqldelight.core.compiler.model</a></p>
-<h2 id="package-comsquareupsqldelightcorecompilermodel">Package com.squareup.sqldelight.core.compiler.model</h2>
-<h3 id="types">Types</h3>
+                <p>//<a href="../">sqldelight-compiler</a>/<a href="./">com.squareup.sqldelight.core.compiler.model</a></p>
+<h1 id="package-comsquareupsqldelightcorecompilermodel">Package com.squareup.sqldelight.core.compiler.model</h1>
+<h2 id="types">Types</h2>
 <table>
 <thead>
 <tr>
@@ -2547,20 +2534,20 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="-bindable-query/">BindableQuery</a></td>
-<td><code>abstract class BindableQuery</code></td>
+<td><a name="com.squareup.sqldelight.core.compiler.model/BindableQuery///PointingToDeclaration/"></a><a href="-bindable-query/">BindableQuery</a></td>
+<td><a name="com.squareup.sqldelight.core.compiler.model/BindableQuery///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>abstract class <a href="-bindable-query/">BindableQuery</a>(<strong>identifier</strong>: PsiElement?, <strong>statement</strong>: PsiElement)  <br><br><br></td>
 </tr>
 <tr>
-<td><a href="-named-execute/">NamedExecute</a></td>
-<td><code>open class NamedExecute :</code><a href="-bindable-query/"><code>BindableQuery</code></a></td>
+<td><a name="com.squareup.sqldelight.core.compiler.model/NamedExecute///PointingToDeclaration/"></a><a href="-named-execute/">NamedExecute</a></td>
+<td><a name="com.squareup.sqldelight.core.compiler.model/NamedExecute///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open class <a href="-named-execute/">NamedExecute</a>(<strong>identifier</strong>: <a href="../com.squareup.sqldelight.core.lang.psi/-stmt-identifier-mixin/">StmtIdentifierMixin</a>, <strong>statement</strong>: PsiElement) : <a href="-bindable-query/">BindableQuery</a>  <br><br><br></td>
 </tr>
 <tr>
-<td><a href="-named-mutator/">NamedMutator</a></td>
-<td><code>sealed class NamedMutator :</code><a href="-named-execute/"><code>NamedExecute</code></a></td>
+<td><a name="com.squareup.sqldelight.core.compiler.model/NamedMutator///PointingToDeclaration/"></a><a href="-named-mutator/">NamedMutator</a></td>
+<td><a name="com.squareup.sqldelight.core.compiler.model/NamedMutator///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>sealed class <a href="-named-mutator/">NamedMutator</a> : <a href="-named-execute/">NamedExecute</a>  <br><br><br></td>
 </tr>
 <tr>
-<td><a href="-named-query/">NamedQuery</a></td>
-<td><code>data class NamedQuery :</code><a href="-bindable-query/"><code>BindableQuery</code></a></td>
+<td><a name="com.squareup.sqldelight.core.compiler.model/NamedQuery///PointingToDeclaration/"></a><a href="-named-query/">NamedQuery</a></td>
+<td><a name="com.squareup.sqldelight.core.compiler.model/NamedQuery///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>data class <a href="-named-query/">NamedQuery</a>(<strong>name</strong>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, <strong>select</strong>: SqlCompoundSelectStmt, <strong>statementIdentifier</strong>: PsiElement?) : <a href="-bindable-query/">BindableQuery</a>  <br><br><br></td>
 </tr>
 </tbody>
 </table>

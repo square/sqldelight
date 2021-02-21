@@ -21,7 +21,7 @@
     
     
       
-        <title>execute - SQLDelight - SQLDelight</title>
+        <title>execute   - SQLDelight - SQLDelight</title>
       
     
     
@@ -93,7 +93,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              execute - SQLDelight
+              execute   - SQLDelight
             
           </span>
         </div>
@@ -2522,17 +2522,41 @@
                   
                 
                 
-                <p><a href="../../../">runtime</a> / <a href="../../">com.squareup.sqldelight.db</a> / <a href="../">SqlDriver</a> / <a href="./">execute</a></p>
+                <p>//<a href="../../../">runtime</a>/<a href="../../">com.squareup.sqldelight.db</a>/<a href="../">SqlDriver</a>/<a href="./">execute</a></p>
 <h1 id="execute">execute</h1>
-<p><code>abstract fun execute(identifier:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><code>Int</code></a><code>?, sql:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><code>String</code></a><code>, parameters:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><code>Int</code></a><code>, binders: (</code><a href="../../-sql-prepared-statement/"><code>SqlPreparedStatement</code></a><code>.() -&gt;</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><code>Unit</code></a><code>)? = null):</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><code>Unit</code></a></p>
+<p>[common]<br />
+Content<br />
+abstract fun <a href="./">execute</a>(identifier: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?, sql: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, parameters: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>, binders: <a href="../../-sql-prepared-statement/">SqlPreparedStatement</a>.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>? = null)<br />
+More info  </p>
 <p>Execute a SQL statement.</p>
-<h3 id="parameters">Parameters</h3>
-<p><code>identifier</code> - An opaque, unique value that can be used to implement any driver-side
-caching of prepared statements. If <a href="./#com.squareup.sqldelight.db.SqlDriver$execute(kotlin.Int, kotlin.String, kotlin.Int, kotlin.Function1((com.squareup.sqldelight.db.SqlPreparedStatement, kotlin.Unit)))/identifier">identifier</a> is null, a fresh statement is required.</p>
-<p><code>sql</code> - The SQL string to be executed.</p>
-<p><code>parameters</code> - The number of bindable parameters <a href="./#com.squareup.sqldelight.db.SqlDriver$execute(kotlin.Int, kotlin.String, kotlin.Int, kotlin.Function1((com.squareup.sqldelight.db.SqlPreparedStatement, kotlin.Unit)))/sql">sql</a> contains.</p>
-<p><code>binders</code> - A lambda which is called before execution to bind any parameters to the SQL
-statement.</p>
+<h2 id="parameters">Parameters</h2>
+<p>common  </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a name="com.squareup.sqldelight.db/SqlDriver/execute/#kotlin.Int?#kotlin.String#kotlin.Int#kotlin.Function1[com.squareup.sqldelight.db.SqlPreparedStatement,kotlin.Unit]?/PointingToDeclaration/"></a>identifier</td>
+<td><a name="com.squareup.sqldelight.db/SqlDriver/execute/#kotlin.Int?#kotlin.String#kotlin.Int#kotlin.Function1[com.squareup.sqldelight.db.SqlPreparedStatement,kotlin.Unit]?/PointingToDeclaration/"></a><br><br>An opaque, unique value that can be used to implement any driver-side caching of prepared statements. If identifier is null, a fresh statement is required.<br><br></td>
+</tr>
+<tr>
+<td><a name="com.squareup.sqldelight.db/SqlDriver/execute/#kotlin.Int?#kotlin.String#kotlin.Int#kotlin.Function1[com.squareup.sqldelight.db.SqlPreparedStatement,kotlin.Unit]?/PointingToDeclaration/"></a>sql</td>
+<td><a name="com.squareup.sqldelight.db/SqlDriver/execute/#kotlin.Int?#kotlin.String#kotlin.Int#kotlin.Function1[com.squareup.sqldelight.db.SqlPreparedStatement,kotlin.Unit]?/PointingToDeclaration/"></a><br><br>The SQL string to be executed.<br><br></td>
+</tr>
+<tr>
+<td><a name="com.squareup.sqldelight.db/SqlDriver/execute/#kotlin.Int?#kotlin.String#kotlin.Int#kotlin.Function1[com.squareup.sqldelight.db.SqlPreparedStatement,kotlin.Unit]?/PointingToDeclaration/"></a>parameters</td>
+<td><a name="com.squareup.sqldelight.db/SqlDriver/execute/#kotlin.Int?#kotlin.String#kotlin.Int#kotlin.Function1[com.squareup.sqldelight.db.SqlPreparedStatement,kotlin.Unit]?/PointingToDeclaration/"></a><br><br>The number of bindable parameters sql contains.<br><br></td>
+</tr>
+<tr>
+<td><a name="com.squareup.sqldelight.db/SqlDriver/execute/#kotlin.Int?#kotlin.String#kotlin.Int#kotlin.Function1[com.squareup.sqldelight.db.SqlPreparedStatement,kotlin.Unit]?/PointingToDeclaration/"></a>binders</td>
+<td><a name="com.squareup.sqldelight.db/SqlDriver/execute/#kotlin.Int?#kotlin.String#kotlin.Int#kotlin.Function1[com.squareup.sqldelight.db.SqlPreparedStatement,kotlin.Unit]?/PointingToDeclaration/"></a><br><br>A lambda which is called before execution to bind any parameters to the SQL statement.<br><br></td>
+</tr>
+</tbody>
+</table>
                 
                   
                 

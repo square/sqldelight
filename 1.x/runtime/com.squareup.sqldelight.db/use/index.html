@@ -21,7 +21,7 @@
     
     
       
-        <title>use - SQLDelight - SQLDelight</title>
+        <title>use   - SQLDelight - SQLDelight</title>
       
     
     
@@ -93,7 +93,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              use - SQLDelight
+              use   - SQLDelight
             
           </span>
         </div>
@@ -2505,11 +2505,17 @@
                   
                 
                 
-                <p><a href="../../">runtime</a> / <a href="../">com.squareup.sqldelight.db</a> / <a href="./">use</a></p>
+                <p>//<a href="../../">runtime</a>/<a href="../">com.squareup.sqldelight.db</a>/<a href="./">use</a></p>
 <h1 id="use">use</h1>
-<p><code>expect inline fun &lt;T :</code><a href="../-closeable/"><code>Closeable</code></a><code>?, R&gt;</code><a href="./#T"><code>T</code></a><code>.use(body: (</code><a href="./#T"><code>T</code></a><code>) -&gt;</code><a href="./#R"><code>R</code></a><code>):</code><a href="./#R"><code>R</code></a></p>
-<p><strong>Platform and version requirements:</strong> JVM, js, native</p>
-<p>Run <a href="./#com.squareup.sqldelight.db$use(com.squareup.sqldelight.db.use.T, kotlin.Function1((com.squareup.sqldelight.db.use.T, com.squareup.sqldelight.db.use.R)))/body">body</a> on the receiver and call <a href="../-closeable/close/">Closeable.close</a> before returning or throwing.</p>
+<p>[common]<br />
+Content<br />
+inline fun &lt;<a href="./">T</a> : <a href="../-closeable/">Closeable</a>?, <a href="./">R</a>&gt; <a href="./">T</a>.<a href="./">use</a>(body: (<a href="./">T</a>) -&gt; <a href="./">R</a>): <a href="./">R</a><br />
+More info  </p>
+<p>Run body on the receiver and call <a href="../-closeable/close/">Closeable.close</a> before returning or throwing.</p>
+<p>[js]<br />
+Content<br />
+inline fun &lt;<a href="./">T</a> : <a href="../-closeable/">Closeable</a>?, <a href="./">R</a>&gt; <a href="./">T</a>.<a href="./">use</a>(body: (<a href="./">T</a>) -&gt; <a href="./">R</a>): <a href="./">R</a><br />
+More info  </p>
                 
                   
                 

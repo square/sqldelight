@@ -1,13 +1,6 @@
-$dokka.format:gfm
+$dokka.format:gfm-v1
 $dokka.linkExtension:md
-$dokka.location:com.squareup.sqldelight.core.lang$acceptsTableInterface(com.alecstrong.sql.psi.core.psi.SqlInsertStmt)com.squareup.sqldelight.core.lang/com.alecstrong.sql.psi.core.psi.-sql-insert-stmt/accepts-table-interface.md
-$dokka.location:com.squareup.sqldelight.core.lang$queriesName#com.intellij.openapi.vfs.VirtualFilecom.squareup.sqldelight.core.lang/com.intellij.openapi.vfs.-virtual-file/queries-name.md
-$dokka.location:com.squareup.sqldelight.core.lang.util$childOfType(com.intellij.psi.PsiElement, com.intellij.psi.tree.IElementType)com.squareup.sqldelight.core.lang.util/com.intellij.psi.-psi-element/child-of-type.md
-$dokka.location:com.squareup.sqldelight.core.lang.util$childOfType(com.intellij.psi.PsiElement, com.intellij.psi.tree.TokenSet)com.squareup.sqldelight.core.lang.util/com.intellij.psi.-psi-element/child-of-type.md
-$dokka.location:com.squareup.sqldelight.core.lang.util$findChildrenOfType(com.intellij.psi.PsiElement)com.squareup.sqldelight.core.lang.util/com.intellij.psi.-psi-element/find-children-of-type.md
-$dokka.location:com.squareup.sqldelight.core.lang.util$forInitializationStatements(kotlin.collections.Collection((com.squareup.sqldelight.core.lang.SqlDelightQueriesFile)), kotlin.Function1((kotlin.String, kotlin.Unit)))com.squareup.sqldelight.core.lang.util/kotlin.collections.-collection/for-initialization-statements.md
-$dokka.location:com.squareup.sqldelight.core.lang.util$nextSiblingOfType(com.intellij.psi.PsiElement)com.squareup.sqldelight.core.lang.util/com.intellij.psi.-psi-element/next-sibling-of-type.md
-$dokka.location:com.squareup.sqldelight.core.lang.util$rawSqlText(com.intellij.psi.PsiElement, kotlin.collections.List((kotlin.Pair((kotlin.ranges.IntRange, kotlin.String)))))com.squareup.sqldelight.core.lang.util/com.intellij.psi.-psi-element/raw-sql-text.md
+
 com.squareup.sqldelight
 com.squareup.sqldelight.core
 com.squareup.sqldelight.core.compiler
@@ -17,4 +10,4 @@ com.squareup.sqldelight.core.lang.psi
 com.squareup.sqldelight.core.lang.util
 com.squareup.sqldelight.core.psi
 com.squareup.sqldelight.core.psi.impl
-timber.log
+

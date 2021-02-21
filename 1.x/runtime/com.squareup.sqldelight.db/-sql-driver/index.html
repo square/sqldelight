@@ -21,7 +21,7 @@
     
     
       
-        <title>SqlDriver - SQLDelight - SQLDelight</title>
+        <title>SqlDriver   - SQLDelight - SQLDelight</title>
       
     
     
@@ -93,7 +93,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              SqlDriver - SQLDelight
+              SqlDriver   - SQLDelight
             
           </span>
         </div>
@@ -2510,20 +2510,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#inherited-functions" class="md-nav__link">
-    Inherited Functions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#extension-functions" class="md-nav__link">
-    Extension Functions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#inheritors" class="md-nav__link">
     Inheritors
   </a>
@@ -2550,12 +2536,11 @@
                   
                 
                 
-                <p><a href="../../">runtime</a> / <a href="../">com.squareup.sqldelight.db</a> / <a href="./">SqlDriver</a></p>
+                <p>//<a href="../../">runtime</a>/<a href="../">com.squareup.sqldelight.db</a>/<a href="./">SqlDriver</a></p>
 <h1 id="sqldriver">SqlDriver</h1>
-<p><code>interface SqlDriver :</code><a href="../-closeable/"><code>Closeable</code></a></p>
-<p>Maintains connections to an underlying SQL database and provides APIs for managing transactions
-and executing SQL statements.</p>
-<h3 id="types">Types</h3>
+<p>[common] interface <a href="./">SqlDriver</a> : <a href="../-closeable/">Closeable</a></p>
+<p>Maintains connections to an underlying SQL database and provides APIs for managing transactions and executing SQL statements.</p>
+<h2 id="types">Types</h2>
 <table>
 <thead>
 <tr>
@@ -2565,12 +2550,12 @@ and executing SQL statements.</p>
 </thead>
 <tbody>
 <tr>
-<td><a href="-schema/">Schema</a></td>
-<td><code>interface Schema</code><br>API for creating and migrating a SQL database.</td>
+<td><a name="com.squareup.sqldelight.db/SqlDriver.Schema///PointingToDeclaration/"></a><a href="-schema/">Schema</a></td>
+<td><a name="com.squareup.sqldelight.db/SqlDriver.Schema///PointingToDeclaration/"></a>[common]  <br>Content  <br>interface <a href="-schema/">Schema</a>  <br>More info  <br>API for creating and migrating a SQL database.  <br><br><br></td>
 </tr>
 </tbody>
 </table>
-<h3 id="functions">Functions</h3>
+<h2 id="functions">Functions</h2>
 <table>
 <thead>
 <tr>
@@ -2580,65 +2565,49 @@ and executing SQL statements.</p>
 </thead>
 <tbody>
 <tr>
-<td><a href="current-transaction/">currentTransaction</a></td>
-<td><code>abstract fun currentTransaction():</code><a href="../../com.squareup.sqldelight/-transacter/-transaction/"><code>Transacter.Transaction</code></a><code>?</code><br>The currently open <a href="../../com.squareup.sqldelight/-transacter/-transaction/">Transacter.Transaction</a> on the database.</td>
+<td><a name="com.squareup.sqldelight.db/Closeable/close/#/PointingToDeclaration/"></a><a href="../-closeable/close/">close</a></td>
+<td><a name="com.squareup.sqldelight.db/Closeable/close/#/PointingToDeclaration/"></a>[common]  <br>Content  <br>abstract fun <a href="../-closeable/close/">close</a>()  <br>More info  <br>Close any resources backed by this object.  <br><br><br></td>
 </tr>
 <tr>
-<td><a href="execute/">execute</a></td>
-<td><code>abstract fun execute(identifier:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><code>Int</code></a><code>?, sql:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><code>String</code></a><code>, parameters:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><code>Int</code></a><code>, binders: (</code><a href="../-sql-prepared-statement/"><code>SqlPreparedStatement</code></a><code>.() -&gt;</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><code>Unit</code></a><code>)? = null):</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><code>Unit</code></a><br>Execute a SQL statement.</td>
+<td><a name="com.squareup.sqldelight.db/SqlDriver/currentTransaction/#/PointingToDeclaration/"></a><a href="current-transaction/">currentTransaction</a></td>
+<td><a name="com.squareup.sqldelight.db/SqlDriver/currentTransaction/#/PointingToDeclaration/"></a>[common]  <br>Content  <br>abstract fun <a href="current-transaction/">currentTransaction</a>(): <a href="../../com.squareup.sqldelight/-transacter/-transaction/">Transacter.Transaction</a>?  <br>More info  <br>The currently open <a href="../../com.squareup.sqldelight/-transacter/-transaction/">Transacter.Transaction</a> on the database.  <br><br><br></td>
 </tr>
 <tr>
-<td><a href="execute-query/">executeQuery</a></td>
-<td><code>abstract fun executeQuery(identifier:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><code>Int</code></a><code>?, sql:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><code>String</code></a><code>, parameters:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><code>Int</code></a><code>, binders: (</code><a href="../-sql-prepared-statement/"><code>SqlPreparedStatement</code></a><code>.() -&gt;</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><code>Unit</code></a><code>)? = null):</code><a href="../-sql-cursor/"><code>SqlCursor</code></a><br>Execute a SQL statement and return a <a href="../-sql-cursor/">SqlCursor</a> that iterates the result set.</td>
+<td><a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a><a href="../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">equals</a></td>
+<td><a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a>[common]  <br>Content  <br>open operator fun <a href="../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">equals</a>(other: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>?): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>  <br><br><br></td>
 </tr>
 <tr>
-<td><a href="new-transaction/">newTransaction</a></td>
-<td><code>abstract fun newTransaction():</code><a href="../../com.squareup.sqldelight/-transacter/-transaction/"><code>Transacter.Transaction</code></a><br>Start a new <a href="../../com.squareup.sqldelight/-transacter/-transaction/">Transacter.Transaction</a> on the database.</td>
+<td><a name="com.squareup.sqldelight.db/SqlDriver/execute/#kotlin.Int?#kotlin.String#kotlin.Int#kotlin.Function1[com.squareup.sqldelight.db.SqlPreparedStatement,kotlin.Unit]?/PointingToDeclaration/"></a><a href="execute/">execute</a></td>
+<td><a name="com.squareup.sqldelight.db/SqlDriver/execute/#kotlin.Int?#kotlin.String#kotlin.Int#kotlin.Function1[com.squareup.sqldelight.db.SqlPreparedStatement,kotlin.Unit]?/PointingToDeclaration/"></a>[common]  <br>Content  <br>abstract fun <a href="execute/">execute</a>(identifier: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?, sql: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, parameters: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>, binders: <a href="../-sql-prepared-statement/">SqlPreparedStatement</a>.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>? = null)  <br>More info  <br>Execute a SQL statement.  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="com.squareup.sqldelight.db/SqlDriver/executeQuery/#kotlin.Int?#kotlin.String#kotlin.Int#kotlin.Function1[com.squareup.sqldelight.db.SqlPreparedStatement,kotlin.Unit]?/PointingToDeclaration/"></a><a href="execute-query/">executeQuery</a></td>
+<td><a name="com.squareup.sqldelight.db/SqlDriver/executeQuery/#kotlin.Int?#kotlin.String#kotlin.Int#kotlin.Function1[com.squareup.sqldelight.db.SqlPreparedStatement,kotlin.Unit]?/PointingToDeclaration/"></a>[common]  <br>Content  <br>abstract fun <a href="execute-query/">executeQuery</a>(identifier: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?, sql: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, parameters: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>, binders: <a href="../-sql-prepared-statement/">SqlPreparedStatement</a>.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>? = null): <a href="../-sql-cursor/">SqlCursor</a>  <br>More info  <br>Execute a SQL statement and return a <a href="../-sql-cursor/">SqlCursor</a> that iterates the result set.  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a><a href="../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">hashCode</a></td>
+<td><a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a>[common]  <br>Content  <br>open fun <a href="../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">hashCode</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="com.squareup.sqldelight.db/SqlDriver/newTransaction/#/PointingToDeclaration/"></a><a href="new-transaction/">newTransaction</a></td>
+<td><a name="com.squareup.sqldelight.db/SqlDriver/newTransaction/#/PointingToDeclaration/"></a>[common]  <br>Content  <br>abstract fun <a href="new-transaction/">newTransaction</a>(): <a href="../../com.squareup.sqldelight/-transacter/-transaction/">Transacter.Transaction</a>  <br>More info  <br>Start a new <a href="../../com.squareup.sqldelight/-transacter/-transaction/">Transacter.Transaction</a> on the database.  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="kotlin/Any/toString/#/PointingToDeclaration/"></a><a href="../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">toString</a></td>
+<td><a name="kotlin/Any/toString/#/PointingToDeclaration/"></a>[common]  <br>Content  <br>open fun <a href="../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">toString</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>  <br><br><br></td>
 </tr>
 </tbody>
 </table>
-<h3 id="inherited-functions">Inherited Functions</h3>
+<h2 id="inheritors">Inheritors</h2>
 <table>
 <thead>
 <tr>
 <th>Name</th>
-<th>Summary</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="../-closeable/close/">close</a><br>(js, native)</td>
-<td><code>abstract fun close():</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><code>Unit</code></a><br>Close any resources backed by this object.</td>
-</tr>
-</tbody>
-</table>
-<h3 id="extension-functions">Extension Functions</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../use/">use</a><br>(JVM, js, native)</td>
-<td><code>expect fun &lt;T :</code><a href="../-closeable/"><code>Closeable</code></a><code>?, R&gt;</code><a href="../use/#T"><code>T</code></a><code>.use(body: (</code><a href="../use/#T"><code>T</code></a><code>) -&gt;</code><a href="../use/#R"><code>R</code></a><code>):</code><a href="../use/#R"><code>R</code></a><br>Run <a href="../use/#com.squareup.sqldelight.db$use(com.squareup.sqldelight.db.use.T, kotlin.Function1((com.squareup.sqldelight.db.use.T, com.squareup.sqldelight.db.use.R)))/body">body</a> on the receiver and call <a href="../-closeable/close/">Closeable.close</a> before returning or throwing.</td>
-</tr>
-</tbody>
-</table>
-<h3 id="inheritors">Inheritors</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../../com.squareup.sqldelight.logs/-log-sqlite-driver/">LogSqliteDriver</a></td>
-<td><code>class LogSqliteDriver :</code><a href="./"><code>SqlDriver</code></a></td>
+<td><a name="com.squareup.sqldelight.logs/LogSqliteDriver///PointingToDeclaration/"></a><a href="../../com.squareup.sqldelight.logs/-log-sqlite-driver/">LogSqliteDriver</a></td>
 </tr>
 </tbody>
 </table>

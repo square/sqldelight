@@ -2620,8 +2620,8 @@ generated interface.</p>
   <span class="n">some_int4</span> <span class="n">INT4</span><span class="p">,</span>                       <span class="c1">-- Retrieved as Int</span>
   <span class="n">some_bigint</span> <span class="nb">BIGINT</span><span class="p">,</span>                   <span class="c1">-- Retrieved as Long</span>
   <span class="n">some_int8</span> <span class="nb">INT8</span><span class="p">,</span>                       <span class="c1">-- Retrieved as Long</span>
-  <span class="n">some_numeric</span> <span class="nb">NUMERIC</span><span class="p">,</span>                 <span class="c1">-- Retrieved as Long</span>
-  <span class="n">some_decimal</span> <span class="nb">DECIMAL</span><span class="p">,</span>                 <span class="c1">-- Retrieved as Long</span>
+  <span class="n">some_numeric</span> <span class="nb">NUMERIC</span><span class="p">,</span>                 <span class="c1">-- Retrieved as Double</span>
+  <span class="n">some_decimal</span> <span class="nb">DECIMAL</span><span class="p">,</span>                 <span class="c1">-- Retrieved as Double</span>
   <span class="n">some_real</span> <span class="nb">REAL</span><span class="p">,</span>                       <span class="c1">-- Retrieved as Double</span>
   <span class="n">some_float4</span> <span class="n">FLOAT4</span><span class="p">,</span>                   <span class="c1">-- Retrieved as Double</span>
   <span class="n">some_double_prec</span> <span class="n">DOUBLE</span> <span class="k">PRECISION</span><span class="p">,</span>    <span class="c1">-- Retrieved as Double</span>
@@ -2638,7 +2638,7 @@ generated interface.</p>
   <span class="n">some_varchar</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">16</span><span class="p">),</span>             <span class="c1">-- Retrieved as String</span>
   <span class="n">some_text</span> <span class="nb">TEXT</span><span class="p">,</span>                       <span class="c1">-- Retrieved as String</span>
   <span class="n">some_date</span> <span class="nb">DATE</span><span class="p">,</span>                       <span class="c1">-- Retrieved as String</span>
-  <span class="n">some_time</span> <span class="n">TIME</span><span class="p">,</span>                       <span class="c1">-- Retrieved as String</span>
+  <span class="n">some_time</span> <span class="k">TIME</span><span class="p">,</span>                       <span class="c1">-- Retrieved as String</span>
   <span class="n">some_timestamp</span> <span class="k">TIMESTAMP</span><span class="p">,</span>             <span class="c1">-- Retrieved as String</span>
   <span class="n">some_json</span> <span class="n">JSON</span>                        <span class="c1">-- Retrieved as String</span>
 <span class="p">);</span>
@@ -2657,7 +2657,12 @@ generated interface.</p>
 
 <p>However, creating the <code>Database</code> will require you to provide a <code>ColumnAdapter</code> which knows how to map between the database type and your custom type:</p>
 <div class="codehilite"><pre><span></span><code><span class="k">val</span> <span class="py">listOfStringsAdapter</span> <span class="p">=</span> <span class="k">object</span> <span class="p">:</span> <span class="nc">ColumnAdapter</span><span class="p">&lt;</span><span class="n">List</span><span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;,</span> <span class="n">String</span><span class="p">&gt;</span> <span class="p">{</span>
-  <span class="k">override</span> <span class="k">fun</span> <span class="nf">decode</span><span class="p">(</span><span class="n">databaseValue</span><span class="p">:</span> <span class="n">String</span><span class="p">)</span> <span class="p">=</span> <span class="n">databaseValue</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;,&quot;</span><span class="p">)</span>
+  <span class="k">override</span> <span class="k">fun</span> <span class="nf">decode</span><span class="p">(</span><span class="n">databaseValue</span><span class="p">:</span> <span class="n">String</span><span class="p">)</span> <span class="p">=</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">databaseValue</span><span class="p">.</span><span class="n">isEmpty</span><span class="p">())</span> <span class="p">{</span>
+      <span class="n">listOf</span><span class="p">()</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="n">databaseValue</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;,&quot;</span><span class="p">)</span>
+    <span class="p">}</span>
   <span class="k">override</span> <span class="k">fun</span> <span class="nf">encode</span><span class="p">(</span><span class="n">value</span><span class="p">:</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;)</span> <span class="p">=</span> <span class="n">value</span><span class="p">.</span><span class="n">joinToString</span><span class="p">(</span><span class="n">separator</span> <span class="p">=</span> <span class="s">&quot;,&quot;</span><span class="p">)</span>
 <span class="p">}</span>
 

@@ -21,7 +21,7 @@
     
     
       
-        <title>ColumnAdapter - SQLDelight - SQLDelight</title>
+        <title>ColumnAdapter   - SQLDelight - SQLDelight</title>
       
     
     
@@ -93,7 +93,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              ColumnAdapter - SQLDelight
+              ColumnAdapter   - SQLDelight
             
           </span>
         </div>
@@ -2529,12 +2529,11 @@
                   
                 
                 
-                <p><a href="../../">runtime</a> / <a href="../">com.squareup.sqldelight</a> / <a href="./">ColumnAdapter</a></p>
+                <p>//<a href="../../">runtime</a>/<a href="../">com.squareup.sqldelight</a>/<a href="./">ColumnAdapter</a></p>
 <h1 id="columnadapter">ColumnAdapter</h1>
-<p><code>interface ColumnAdapter&lt;T :</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><code>Any</code></a><code>, S&gt;</code></p>
-<p>Marshal and map the type <code>T</code> to and from a database type <code>S</code> which is one of
-<code>Long</code>, <code>Double</code>, <code>String</code>, <code>byte[]</code>.</p>
-<h3 id="functions">Functions</h3>
+<p>[common] interface <a href="./">ColumnAdapter</a>&lt;<a href="./">T</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>, <a href="./">S</a>&gt;</p>
+<p>Marshal and map the type T to and from a database type S which is one of Long, Double, String, byte[].</p>
+<h2 id="functions">Functions</h2>
 <table>
 <thead>
 <tr>
@@ -2544,27 +2543,37 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="decode/">decode</a></td>
-<td><code>abstract fun decode(databaseValue:</code><a href="./#S"><code>S</code></a><code>):</code><a href="./#T"><code>T</code></a></td>
+<td><a name="com.squareup.sqldelight/ColumnAdapter/decode/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/"></a><a href="decode/">decode</a></td>
+<td><a name="com.squareup.sqldelight/ColumnAdapter/decode/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/"></a>[common]  <br>Content  <br>abstract fun <a href="decode/">decode</a>(databaseValue: <a href="./">S</a>): <a href="./">T</a>  <br><br><br></td>
 </tr>
 <tr>
-<td><a href="encode/">encode</a></td>
-<td><code>abstract fun encode(value:</code><a href="./#T"><code>T</code></a><code>):</code><a href="./#S"><code>S</code></a></td>
+<td><a name="com.squareup.sqldelight/ColumnAdapter/encode/#TypeParam(bounds=[kotlin.Any])/PointingToDeclaration/"></a><a href="encode/">encode</a></td>
+<td><a name="com.squareup.sqldelight/ColumnAdapter/encode/#TypeParam(bounds=[kotlin.Any])/PointingToDeclaration/"></a>[common]  <br>Content  <br>abstract fun <a href="encode/">encode</a>(value: <a href="./">T</a>): <a href="./">S</a>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a><a href="../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">equals</a></td>
+<td><a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a>[common]  <br>Content  <br>open operator fun <a href="../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">equals</a>(other: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>?): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a><a href="../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">hashCode</a></td>
+<td><a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a>[common]  <br>Content  <br>open fun <a href="../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">hashCode</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="kotlin/Any/toString/#/PointingToDeclaration/"></a><a href="../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">toString</a></td>
+<td><a name="kotlin/Any/toString/#/PointingToDeclaration/"></a>[common]  <br>Content  <br>open fun <a href="../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">toString</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>  <br><br><br></td>
 </tr>
 </tbody>
 </table>
-<h3 id="inheritors">Inheritors</h3>
+<h2 id="inheritors">Inheritors</h2>
 <table>
 <thead>
 <tr>
 <th>Name</th>
-<th>Summary</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="../-enum-column-adapter/">EnumColumnAdapter</a></td>
-<td><code>class EnumColumnAdapter&lt;T :</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html"><code>Enum</code></a><code>&lt;</code><a href="../-enum-column-adapter/#T"><code>T</code></a><code>&gt;&gt; :</code><a href="./"><code>ColumnAdapter</code></a><code>&lt;</code><a href="../-enum-column-adapter/#T"><code>T</code></a><code>,</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><code>String</code></a><code>&gt;</code><br>A <a href="./">ColumnAdapter</a> which maps the enum class <code>T</code> to a string in the database.</td>
+<td><a name="com.squareup.sqldelight/EnumColumnAdapter///PointingToDeclaration/"></a><a href="../-enum-column-adapter/">EnumColumnAdapter</a></td>
 </tr>
 </tbody>
 </table>

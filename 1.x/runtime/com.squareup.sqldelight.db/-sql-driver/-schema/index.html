@@ -21,7 +21,7 @@
     
     
       
-        <title>Schema - SQLDelight - SQLDelight</title>
+        <title>Schema   - SQLDelight - SQLDelight</title>
       
     
     
@@ -93,7 +93,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Schema - SQLDelight
+              Schema   - SQLDelight
             
           </span>
         </div>
@@ -2496,15 +2496,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
-    Properties
+  <a href="#functions" class="md-nav__link">
+    Functions
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#functions" class="md-nav__link">
-    Functions
+  <a href="#properties" class="md-nav__link">
+    Properties
   </a>
   
 </li>
@@ -2529,11 +2529,11 @@
                   
                 
                 
-                <p><a href="../../../">runtime</a> / <a href="../../">com.squareup.sqldelight.db</a> / <a href="../">SqlDriver</a> / <a href="./">Schema</a></p>
+                <p>//<a href="../../../">runtime</a>/<a href="../../">com.squareup.sqldelight.db</a>/<a href="../">SqlDriver</a>/<a href="./">Schema</a></p>
 <h1 id="schema">Schema</h1>
-<p><code>interface Schema</code></p>
+<p>[common] interface <a href="./">Schema</a></p>
 <p>API for creating and migrating a SQL database.</p>
-<h3 id="properties">Properties</h3>
+<h2 id="functions">Functions</h2>
 <table>
 <thead>
 <tr>
@@ -2543,12 +2543,28 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="version/">version</a></td>
-<td><code>abstract val version:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><code>Int</code></a><br>The version of this schema.</td>
+<td><a name="com.squareup.sqldelight.db/SqlDriver.Schema/create/#com.squareup.sqldelight.db.SqlDriver/PointingToDeclaration/"></a><a href="create/">create</a></td>
+<td><a name="com.squareup.sqldelight.db/SqlDriver.Schema/create/#com.squareup.sqldelight.db.SqlDriver/PointingToDeclaration/"></a>[common]  <br>Content  <br>abstract fun <a href="create/">create</a>(driver: <a href="../">SqlDriver</a>)  <br>More info  <br>Use driver to create the schema from scratch.  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a><a href="../../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">equals</a></td>
+<td><a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a>[common]  <br>Content  <br>open operator fun <a href="../../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">equals</a>(other: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>?): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a><a href="../../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">hashCode</a></td>
+<td><a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a>[common]  <br>Content  <br>open fun <a href="../../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">hashCode</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="com.squareup.sqldelight.db/SqlDriver.Schema/migrate/#com.squareup.sqldelight.db.SqlDriver#kotlin.Int#kotlin.Int/PointingToDeclaration/"></a><a href="migrate/">migrate</a></td>
+<td><a name="com.squareup.sqldelight.db/SqlDriver.Schema/migrate/#com.squareup.sqldelight.db.SqlDriver#kotlin.Int#kotlin.Int/PointingToDeclaration/"></a>[common]  <br>Content  <br>abstract fun <a href="migrate/">migrate</a>(driver: <a href="../">SqlDriver</a>, oldVersion: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>, newVersion: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>)  <br>More info  <br>Use driver to migrate from schema oldVersion to newVersion.  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="kotlin/Any/toString/#/PointingToDeclaration/"></a><a href="../../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">toString</a></td>
+<td><a name="kotlin/Any/toString/#/PointingToDeclaration/"></a>[common]  <br>Content  <br>open fun <a href="../../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">toString</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>  <br><br><br></td>
 </tr>
 </tbody>
 </table>
-<h3 id="functions">Functions</h3>
+<h2 id="properties">Properties</h2>
 <table>
 <thead>
 <tr>
@@ -2558,12 +2574,8 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="create/">create</a></td>
-<td><code>abstract fun create(driver:</code><a href="../"><code>SqlDriver</code></a><code>):</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><code>Unit</code></a><br>Use <a href="create/#com.squareup.sqldelight.db.SqlDriver.Schema$create(com.squareup.sqldelight.db.SqlDriver)/driver">driver</a> to create the schema from scratch. Assumes no existing database state.</td>
-</tr>
-<tr>
-<td><a href="migrate/">migrate</a></td>
-<td><code>abstract fun migrate(driver:</code><a href="../"><code>SqlDriver</code></a><code>, oldVersion:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><code>Int</code></a><code>, newVersion:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><code>Int</code></a><code>):</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><code>Unit</code></a><br>Use <a href="migrate/#com.squareup.sqldelight.db.SqlDriver.Schema$migrate(com.squareup.sqldelight.db.SqlDriver, kotlin.Int, kotlin.Int)/driver">driver</a> to migrate from schema <a href="migrate/#com.squareup.sqldelight.db.SqlDriver.Schema$migrate(com.squareup.sqldelight.db.SqlDriver, kotlin.Int, kotlin.Int)/oldVersion">oldVersion</a> to <a href="migrate/#com.squareup.sqldelight.db.SqlDriver.Schema$migrate(com.squareup.sqldelight.db.SqlDriver, kotlin.Int, kotlin.Int)/newVersion">newVersion</a>.</td>
+<td><a name="com.squareup.sqldelight.db/SqlDriver.Schema/version/#/PointingToDeclaration/"></a><a href="version/">version</a></td>
+<td><a name="com.squareup.sqldelight.db/SqlDriver.Schema/version/#/PointingToDeclaration/"></a> [common] abstract val <a href="version/">version</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>The version of this schema.   <br></td>
 </tr>
 </tbody>
 </table>

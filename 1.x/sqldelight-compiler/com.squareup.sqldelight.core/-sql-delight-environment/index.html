@@ -21,7 +21,7 @@
     
     
       
-        <title>SqlDelightEnvironment - SQLDelight - SQLDelight</title>
+        <title>SqlDelightEnvironment   - SQLDelight - SQLDelight</title>
       
     
     
@@ -93,7 +93,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              SqlDelightEnvironment - SQLDelight
+              SqlDelightEnvironment   - SQLDelight
             
           </span>
         </div>
@@ -2496,13 +2496,6 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#types" class="md-nav__link">
-    Types
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#constructors" class="md-nav__link">
     Constructors
   </a>
@@ -2510,8 +2503,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
-    Properties
+  <a href="#types" class="md-nav__link">
+    Types
   </a>
   
 </li>
@@ -2519,6 +2512,13 @@
         <li class="md-nav__item">
   <a href="#functions" class="md-nav__link">
     Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
   </a>
   
 </li>
@@ -2543,12 +2543,11 @@
                   
                 
                 
-                <p><a href="../../">sqldelight-compiler</a> / <a href="../">com.squareup.sqldelight.core</a> / <a href="./">SqlDelightEnvironment</a></p>
+                <p>//<a href="../../">sqldelight-compiler</a>/<a href="../">com.squareup.sqldelight.core</a>/<a href="./">SqlDelightEnvironment</a></p>
 <h1 id="sqldelightenvironment">SqlDelightEnvironment</h1>
-<p><code>class SqlDelightEnvironment : SqlCoreEnvironment,</code><a href="../-sql-delight-project-service/"><code>SqlDelightProjectService</code></a></p>
-<p>Mocks an intellij environment for compiling sqldelight files without an instance of intellij
-running.</p>
-<h3 id="types">Types</h3>
+<p>[jvm] class <a href="./">SqlDelightEnvironment</a>(<strong>sourceFolders</strong>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html">File</a>&gt;, <strong>dependencyFolders</strong>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html">File</a>&gt;, <strong>properties</strong>: <a href="../-sql-delight-database-properties/">SqlDelightDatabaseProperties</a>, <strong>verifyMigrations</strong>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, <strong>moduleName</strong>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>) : SqlCoreEnvironment, <a href="../-sql-delight-project-service/">SqlDelightProjectService</a></p>
+<p>Mocks an intellij environment for compiling sqldelight files without an instance of intellij running.</p>
+<h2 id="constructors">Constructors</h2>
 <table>
 <thead>
 <tr>
@@ -2558,12 +2557,12 @@ running.</p>
 </thead>
 <tbody>
 <tr>
-<td><a href="-compilation-status/">CompilationStatus</a></td>
-<td><code>sealed class CompilationStatus</code></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightEnvironment/SqlDelightEnvironment/#kotlin.collections.List[java.io.File]#kotlin.collections.List[java.io.File]#com.squareup.sqldelight.core.SqlDelightDatabaseProperties#kotlin.Boolean#kotlin.String/PointingToDeclaration/"></a><a href="-sql-delight-environment/">SqlDelightEnvironment</a></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightEnvironment/SqlDelightEnvironment/#kotlin.collections.List[java.io.File]#kotlin.collections.List[java.io.File]#com.squareup.sqldelight.core.SqlDelightDatabaseProperties#kotlin.Boolean#kotlin.String/PointingToDeclaration/"></a> [jvm] fun <a href="-sql-delight-environment/">SqlDelightEnvironment</a>(sourceFolders: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html">File</a>&gt;, dependencyFolders: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html">File</a>&gt;, properties: <a href="../-sql-delight-database-properties/">SqlDelightDatabaseProperties</a>, verifyMigrations: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, moduleName: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>)   <br></td>
 </tr>
 </tbody>
 </table>
-<h3 id="constructors">Constructors</h3>
+<h2 id="types">Types</h2>
 <table>
 <thead>
 <tr>
@@ -2573,12 +2572,12 @@ running.</p>
 </thead>
 <tbody>
 <tr>
-<td><a href="-init-/">&lt;init&gt;</a></td>
-<td><code>SqlDelightEnvironment(sourceFolders:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><code>List</code></a><code>&lt;</code><a href="https://docs.oracle.com/javase/6/docs/api/java/io/File.html"><code>File</code></a><code>&gt;, dependencyFolders:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><code>List</code></a><code>&lt;</code><a href="https://docs.oracle.com/javase/6/docs/api/java/io/File.html"><code>File</code></a><code>&gt;, properties:</code><a href="../-sql-delight-database-properties/"><code>SqlDelightDatabaseProperties</code></a><code>, moduleName:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><code>String</code></a><code>)</code><br>Mocks an intellij environment for compiling sqldelight files without an instance of intellij running.</td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightEnvironment.CompilationStatus///PointingToDeclaration/"></a><a href="-compilation-status/">CompilationStatus</a></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightEnvironment.CompilationStatus///PointingToDeclaration/"></a>[jvm]  <br>Content  <br>sealed class <a href="-compilation-status/">CompilationStatus</a>  <br><br><br></td>
 </tr>
 </tbody>
 </table>
-<h3 id="properties">Properties</h3>
+<h2 id="functions">Functions</h2>
 <table>
 <thead>
 <tr>
@@ -2588,20 +2587,48 @@ running.</p>
 </thead>
 <tbody>
 <tr>
-<td><a href="dialect-preset/">dialectPreset</a></td>
-<td><code>var dialectPreset: DialectPreset</code></td>
+<td><a name="com.alecstrong.sql.psi.core/SqlCoreEnvironment/annotate/#com.alecstrong.sql.psi.core.SqlAnnotationHolder/PointingToDeclaration/"></a><a href="./#%5Bcom.alecstrong.sql.psi.core%2FSqlCoreEnvironment%2Fannotate%2F%23com.alecstrong.sql.psi.core.SqlAnnotationHolder%2FPointingToDeclaration%2F%5D%2FFunctions%2F-667256284">annotate</a></td>
+<td><a name="com.alecstrong.sql.psi.core/SqlCoreEnvironment/annotate/#com.alecstrong.sql.psi.core.SqlAnnotationHolder/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>fun <a href="./#%5Bcom.alecstrong.sql.psi.core%2FSqlCoreEnvironment%2Fannotate%2F%23com.alecstrong.sql.psi.core.SqlAnnotationHolder%2FPointingToDeclaration%2F%5D%2FFunctions%2F-667256284">annotate</a>(annotationHolder: SqlAnnotationHolder)  <br><br><br></td>
 </tr>
 <tr>
-<td><a href="module/">module</a></td>
-<td><code>val module: MockModule</code></td>
+<td><a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a><a href="../../com.squareup.sqldelight.core.lang.psi/-stmt-identifier-mixin/#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F-667256284">equals</a></td>
+<td><a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open operator fun <a href="../../com.squareup.sqldelight.core.lang.psi/-stmt-identifier-mixin/#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F-667256284">equals</a>(other: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>?): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>  <br><br><br></td>
 </tr>
 <tr>
-<td><a href="project/">project</a></td>
-<td><code>val project: Project</code></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightEnvironment/fileIndex/#com.intellij.openapi.module.Module/PointingToDeclaration/"></a><a href="file-index/">fileIndex</a></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightEnvironment/fileIndex/#com.intellij.openapi.module.Module/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open override fun <a href="file-index/">fileIndex</a>(module: Module): <a href="../-sql-delight-file-index/">SqlDelightFileIndex</a>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="com.squareup.sqldelight.core/SqlDelightEnvironment/forMigrationFiles/#kotlin.Function1[com.squareup.sqldelight.core.lang.MigrationFile,kotlin.Unit]/PointingToDeclaration/"></a><a href="for-migration-files/">forMigrationFiles</a></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightEnvironment/forMigrationFiles/#kotlin.Function1[com.squareup.sqldelight.core.lang.MigrationFile,kotlin.Unit]/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>fun <a href="for-migration-files/">forMigrationFiles</a>(body: (<a href="../../com.squareup.sqldelight.core.lang/-migration-file/">MigrationFile</a>) -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>)  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="com.squareup.sqldelight.core/SqlDelightEnvironment/forSourceFiles/#kotlin.Function1[com.alecstrong.sql.psi.core.SqlFileBase,kotlin.Unit]/PointingToDeclaration/"></a><a href="for-source-files/">forSourceFiles</a></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightEnvironment/forSourceFiles/#kotlin.Function1[com.alecstrong.sql.psi.core.SqlFileBase,kotlin.Unit]/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open override fun <a href="for-source-files/">forSourceFiles</a>(action: (SqlFileBase) -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>)  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="com.squareup.sqldelight.core/SqlDelightEnvironment/generateSqlDelightFiles/#kotlin.Function1[kotlin.String,kotlin.Unit]/PointingToDeclaration/"></a><a href="generate-sql-delight-files/">generateSqlDelightFiles</a></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightEnvironment/generateSqlDelightFiles/#kotlin.Function1[kotlin.String,kotlin.Unit]/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>fun <a href="generate-sql-delight-files/">generateSqlDelightFiles</a>(logger: (<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>) -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>): <a href="-compilation-status/">SqlDelightEnvironment.CompilationStatus</a>  <br>More info  <br>Run the SQLDelight compiler and return the error or success status.  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a><a href="../../com.squareup.sqldelight.core.lang.psi/-stmt-identifier-mixin/#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-667256284">hashCode</a></td>
+<td><a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open fun <a href="../../com.squareup.sqldelight.core.lang.psi/-stmt-identifier-mixin/#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-667256284">hashCode</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="com.squareup.sqldelight.core/SqlDelightEnvironment/module/#com.intellij.openapi.vfs.VirtualFile/PointingToDeclaration/"></a><a href="module/">module</a></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightEnvironment/module/#com.intellij.openapi.vfs.VirtualFile/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open override fun <a href="module/">module</a>(vFile: VirtualFile): MockModule  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="com.squareup.sqldelight.core/SqlDelightEnvironment/resetIndex/#/PointingToDeclaration/"></a><a href="reset-index/">resetIndex</a></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightEnvironment/resetIndex/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open override fun <a href="reset-index/">resetIndex</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-nothing/index.html">Nothing</a>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="kotlin/Any/toString/#/PointingToDeclaration/"></a><a href="../../com.squareup.sqldelight.core.lang.psi/-stmt-identifier/#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-667256284">toString</a></td>
+<td><a name="kotlin/Any/toString/#/PointingToDeclaration/"></a>[jvm]  <br>Content  <br>open fun <a href="../../com.squareup.sqldelight.core.lang.psi/-stmt-identifier/#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-667256284">toString</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>  <br><br><br></td>
 </tr>
 </tbody>
 </table>
-<h3 id="functions">Functions</h3>
+<h2 id="properties">Properties</h2>
 <table>
 <thead>
 <tr>
@@ -2611,24 +2638,16 @@ running.</p>
 </thead>
 <tbody>
 <tr>
-<td><a href="file-index/">fileIndex</a></td>
-<td><code>fun fileIndex(module: Module):</code><a href="../-sql-delight-file-index/"><code>SqlDelightFileIndex</code></a></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightEnvironment/dialectPreset/#/PointingToDeclaration/"></a><a href="dialect-preset/">dialectPreset</a></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightEnvironment/dialectPreset/#/PointingToDeclaration/"></a> [jvm] open override var <a href="dialect-preset/">dialectPreset</a>: DialectPreset   <br></td>
 </tr>
 <tr>
-<td><a href="for-migration-files/">forMigrationFiles</a></td>
-<td><code>fun forMigrationFiles(body: (</code><a href="../../com.squareup.sqldelight.core.lang/-migration-file/"><code>MigrationFile</code></a><code>) -&gt;</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><code>Unit</code></a><code>):</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><code>Unit</code></a></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightEnvironment/module/#/PointingToDeclaration/"></a><a href="module/">module</a></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightEnvironment/module/#/PointingToDeclaration/"></a> [jvm] val <a href="module/">module</a>: MockModule   <br></td>
 </tr>
 <tr>
-<td><a href="for-source-files/">forSourceFiles</a></td>
-<td><code>fun forSourceFiles(action: (SqlFileBase) -&gt;</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><code>Unit</code></a><code>):</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><code>Unit</code></a></td>
-</tr>
-<tr>
-<td><a href="generate-sql-delight-files/">generateSqlDelightFiles</a></td>
-<td><code>fun generateSqlDelightFiles(logger: (</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><code>String</code></a><code>) -&gt;</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><code>Unit</code></a><code>):</code><a href="-compilation-status/"><code>SqlDelightEnvironment.CompilationStatus</code></a><br>Run the SQLDelight compiler and return the error or success status.</td>
-</tr>
-<tr>
-<td><a href="module/">module</a></td>
-<td><code>fun module(vFile: VirtualFile): MockModule</code></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightEnvironment/project/#/PointingToDeclaration/"></a><a href="project/">project</a></td>
+<td><a name="com.squareup.sqldelight.core/SqlDelightEnvironment/project/#/PointingToDeclaration/"></a> [jvm] val <a href="project/">project</a>: Project   <br></td>
 </tr>
 </tbody>
 </table>

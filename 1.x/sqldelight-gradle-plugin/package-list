@@ -1,5 +1,6 @@
-$dokka.format:gfm
+$dokka.format:gfm-v1
 $dokka.linkExtension:md
-$dokka.location:com.squareup.sqldelight.gradle.kotlin$linkSqlite(org.gradle.api.Project)com.squareup.sqldelight.gradle.kotlin/org.gradle.api.-project/link-sqlite.md
+
 com.squareup.sqldelight.gradle
 com.squareup.sqldelight.gradle.kotlin
+

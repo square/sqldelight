@@ -21,7 +21,7 @@
     
     
       
-        <title>executeAsOne - SQLDelight - SQLDelight</title>
+        <title>executeAsOne   - SQLDelight - SQLDelight</title>
       
     
     
@@ -93,7 +93,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              executeAsOne - SQLDelight
+              executeAsOne   - SQLDelight
             
           </span>
         </div>
@@ -2496,8 +2496,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#exceptions" class="md-nav__link">
-    Exceptions
+  <a href="#return" class="md-nav__link">
+    Return
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#throws" class="md-nav__link">
+    Throws
   </a>
   
 </li>
@@ -2522,15 +2529,33 @@
                   
                 
                 
-                <p><a href="../../../">runtime</a> / <a href="../../">com.squareup.sqldelight</a> / <a href="../">Query</a> / <a href="./">executeAsOne</a></p>
+                <p>//<a href="../../../">runtime</a>/<a href="../../">com.squareup.sqldelight</a>/<a href="../">Query</a>/<a href="./">executeAsOne</a></p>
 <h1 id="executeasone">executeAsOne</h1>
-<p><code>fun executeAsOne():</code><a href="../#RowType"><code>RowType</code></a></p>
-<h3 id="exceptions">Exceptions</h3>
-<p><code>NullPointerException</code> - if when executed this query has no rows in its result set.</p>
-<p><code>IllegalStateException</code> - if when executed this query has multiple rows in its result set.</p>
-<p><strong>Return</strong>
-The only row of the result set for the underlying SQL statement as a non null
-<a href="../#RowType">RowType</a>.</p>
+<p>[common]<br />
+Content<br />
+fun <a href="./">executeAsOne</a>(): <a href="../">RowType</a><br />
+More info  </p>
+<h4 id="return">Return</h4>
+<p>The only row of the result set for the underlying SQL statement as a non null <a href="../">RowType</a>.</p>
+<h4 id="throws">Throws</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a name="com.squareup.sqldelight/Query/executeAsOne/#/PointingToDeclaration/"></a><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-null-pointer-exception/index.html">kotlin.NullPointerException</a></td>
+<td><a name="com.squareup.sqldelight/Query/executeAsOne/#/PointingToDeclaration/"></a><br><br>if when executed this query has no rows in its result set.<br><br></td>
+</tr>
+<tr>
+<td><a name="com.squareup.sqldelight/Query/executeAsOne/#/PointingToDeclaration/"></a><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-illegal-state-exception/index.html">kotlin.IllegalStateException</a></td>
+<td><a name="com.squareup.sqldelight/Query/executeAsOne/#/PointingToDeclaration/"></a><br><br>if when executed this query has multiple rows in its result set.<br><br></td>
+</tr>
+</tbody>
+</table>
                 
                   
                 

@@ -21,7 +21,7 @@
     
     
       
-        <title>Transaction - SQLDelight - SQLDelight</title>
+        <title>Transaction   - SQLDelight - SQLDelight</title>
       
     
     
@@ -93,7 +93,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Transaction - SQLDelight
+              Transaction   - SQLDelight
             
           </span>
         </div>
@@ -2503,13 +2503,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
-    Properties
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#functions" class="md-nav__link">
     Functions
   </a>
@@ -2536,12 +2529,11 @@
                   
                 
                 
-                <p><a href="../../../">runtime</a> / <a href="../../">com.squareup.sqldelight</a> / <a href="../">Transacter</a> / <a href="./">Transaction</a></p>
+                <p>//<a href="../../../">runtime</a>/<a href="../../">com.squareup.sqldelight</a>/<a href="../">Transacter</a>/<a href="./">Transaction</a></p>
 <h1 id="transaction">Transaction</h1>
-<p><code>abstract class Transaction :</code><a href="../../-transaction-callbacks/"><code>TransactionCallbacks</code></a></p>
-<p>A SQL transaction. Can be created through the driver via <a href="../../../com.squareup.sqldelight.db/-sql-driver/new-transaction/">SqlDriver.newTransaction</a> or
-through an implementation of <a href="../">Transacter</a> by calling <a href="../transaction/">Transacter.transaction</a>.</p>
-<h3 id="constructors">Constructors</h3>
+<p>[common] abstract class <a href="./">Transaction</a> : <a href="../../-transaction-callbacks/">TransactionCallbacks</a></p>
+<p>A SQL transaction. Can be created through the driver via <a href="../../../com.squareup.sqldelight.db/-sql-driver/new-transaction/">SqlDriver.newTransaction</a> or through an implementation of <a href="../">Transacter</a> by calling <a href="../transaction/">Transacter.transaction</a>.</p>
+<h2 id="constructors">Constructors</h2>
 <table>
 <thead>
 <tr>
@@ -2551,12 +2543,12 @@ through an implementation of <a href="../">Transacter</a> by calling <a href="..
 </thead>
 <tbody>
 <tr>
-<td><a href="-init-/">&lt;init&gt;</a></td>
-<td><code>Transaction()</code><br>A SQL transaction. Can be created through the driver via <a href="../../../com.squareup.sqldelight.db/-sql-driver/new-transaction/">SqlDriver.newTransaction</a> or through an implementation of <a href="../">Transacter</a> by calling <a href="../transaction/">Transacter.transaction</a>.</td>
+<td><a name="com.squareup.sqldelight/Transacter.Transaction/Transaction/#/PointingToDeclaration/"></a><a href="-transaction/">Transaction</a></td>
+<td><a name="com.squareup.sqldelight/Transacter.Transaction/Transaction/#/PointingToDeclaration/"></a> [common] fun <a href="-transaction/">Transaction</a>()   <br></td>
 </tr>
 </tbody>
 </table>
-<h3 id="properties">Properties</h3>
+<h2 id="functions">Functions</h2>
 <table>
 <thead>
 <tr>
@@ -2566,31 +2558,24 @@ through an implementation of <a href="../">Transacter</a> by calling <a href="..
 </thead>
 <tbody>
 <tr>
-<td><a href="enclosing-transaction/">enclosingTransaction</a></td>
-<td><code>abstract val enclosingTransaction:</code><a href="./"><code>Transacter.Transaction</code></a><code>?</code><br>The parent transaction, if there is any.</td>
-</tr>
-</tbody>
-</table>
-<h3 id="functions">Functions</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="after-commit/">afterCommit</a></td>
-<td><code>open fun afterCommit(function: () -&gt;</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><code>Unit</code></a><code>):</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><code>Unit</code></a><br>Queues <a href="after-commit/#com.squareup.sqldelight.Transacter.Transaction$afterCommit(kotlin.Function0((kotlin.Unit)))/function">function</a> to be run after this transaction successfully commits.</td>
+<td><a name="com.squareup.sqldelight/Transacter.Transaction/afterCommit/#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/"></a><a href="after-commit/">afterCommit</a></td>
+<td><a name="com.squareup.sqldelight/Transacter.Transaction/afterCommit/#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/"></a>[common]  <br>Content  <br>open override fun <a href="after-commit/">afterCommit</a>(function: () -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>)  <br>More info  <br>Queues function to be run after this transaction successfully commits.  <br><br><br></td>
 </tr>
 <tr>
-<td><a href="after-rollback/">afterRollback</a></td>
-<td><code>open fun afterRollback(function: () -&gt;</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><code>Unit</code></a><code>):</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><code>Unit</code></a><br>Queues <a href="after-rollback/#com.squareup.sqldelight.Transacter.Transaction$afterRollback(kotlin.Function0((kotlin.Unit)))/function">function</a> to be run after this transaction rolls back.</td>
+<td><a name="com.squareup.sqldelight/Transacter.Transaction/afterRollback/#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/"></a><a href="after-rollback/">afterRollback</a></td>
+<td><a name="com.squareup.sqldelight/Transacter.Transaction/afterRollback/#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/"></a>[common]  <br>Content  <br>open override fun <a href="after-rollback/">afterRollback</a>(function: () -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>)  <br>More info  <br>Queues function to be run after this transaction rolls back.  <br><br><br></td>
 </tr>
 <tr>
-<td><a href="end-transaction/">endTransaction</a></td>
-<td><code>abstract fun endTransaction(successful:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><code>Boolean</code></a><code>):</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><code>Unit</code></a><br>Signal to the underlying SQL driver that this transaction should be finished.</td>
+<td><a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a><a href="../../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">equals</a></td>
+<td><a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a>[common]  <br>Content  <br>open operator fun <a href="../../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">equals</a>(other: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>?): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a><a href="../../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">hashCode</a></td>
+<td><a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a>[common]  <br>Content  <br>open fun <a href="../../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">hashCode</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="kotlin/Any/toString/#/PointingToDeclaration/"></a><a href="../../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">toString</a></td>
+<td><a name="kotlin/Any/toString/#/PointingToDeclaration/"></a>[common]  <br>Content  <br>open fun <a href="../../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">toString</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>  <br><br><br></td>
 </tr>
 </tbody>
 </table>

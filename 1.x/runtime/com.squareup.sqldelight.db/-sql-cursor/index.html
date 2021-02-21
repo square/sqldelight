@@ -21,7 +21,7 @@
     
     
       
-        <title>SqlCursor - SQLDelight - SQLDelight</title>
+        <title>SqlCursor   - SQLDelight - SQLDelight</title>
       
     
     
@@ -93,7 +93,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              SqlCursor - SQLDelight
+              SqlCursor   - SQLDelight
             
           </span>
         </div>
@@ -2502,20 +2502,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#inherited-functions" class="md-nav__link">
-    Inherited Functions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#extension-functions" class="md-nav__link">
-    Extension Functions
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -2536,12 +2522,11 @@
                   
                 
                 
-                <p><a href="../../">runtime</a> / <a href="../">com.squareup.sqldelight.db</a> / <a href="./">SqlCursor</a></p>
+                <p>//<a href="../../">runtime</a>/<a href="../">com.squareup.sqldelight.db</a>/<a href="./">SqlCursor</a></p>
 <h1 id="sqlcursor">SqlCursor</h1>
-<p><code>interface SqlCursor :</code><a href="../-closeable/"><code>Closeable</code></a></p>
-<p>Represents a SQL result set which can be iterated through with <a href="next/">next</a>. Initially the cursor will
-not point to any row, and calling <a href="next/">next</a> once will iterate to the first row.</p>
-<h3 id="functions">Functions</h3>
+<p>[common] interface <a href="./">SqlCursor</a> : <a href="../-closeable/">Closeable</a></p>
+<p>Represents a SQL result set which can be iterated through with <a href="next/">next</a>. Initially the cursor will not point to any row, and calling <a href="next/">next</a> once will iterate to the first row.</p>
+<h2 id="functions">Functions</h2>
 <table>
 <thead>
 <tr>
@@ -2551,54 +2536,40 @@ not point to any row, and calling <a href="next/">next</a> once will iterate to 
 </thead>
 <tbody>
 <tr>
-<td><a href="get-bytes/">getBytes</a></td>
-<td><code>abstract fun getBytes(index:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><code>Int</code></a><code>):</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><code>ByteArray</code></a><code>?</code></td>
+<td><a name="com.squareup.sqldelight.db/Closeable/close/#/PointingToDeclaration/"></a><a href="../-closeable/close/">close</a></td>
+<td><a name="com.squareup.sqldelight.db/Closeable/close/#/PointingToDeclaration/"></a>[common]  <br>Content  <br>abstract fun <a href="../-closeable/close/">close</a>()  <br>More info  <br>Close any resources backed by this object.  <br><br><br></td>
 </tr>
 <tr>
-<td><a href="get-double/">getDouble</a></td>
-<td><code>abstract fun getDouble(index:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><code>Int</code></a><code>):</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><code>Double</code></a><code>?</code></td>
+<td><a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a><a href="../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">equals</a></td>
+<td><a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a>[common]  <br>Content  <br>open operator fun <a href="../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">equals</a>(other: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>?): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>  <br><br><br></td>
 </tr>
 <tr>
-<td><a href="get-long/">getLong</a></td>
-<td><code>abstract fun getLong(index:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><code>Int</code></a><code>):</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><code>Long</code></a><code>?</code></td>
+<td><a name="com.squareup.sqldelight.db/SqlCursor/getBytes/#kotlin.Int/PointingToDeclaration/"></a><a href="get-bytes/">getBytes</a></td>
+<td><a name="com.squareup.sqldelight.db/SqlCursor/getBytes/#kotlin.Int/PointingToDeclaration/"></a>[common]  <br>Content  <br>abstract fun <a href="get-bytes/">getBytes</a>(index: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a>?  <br><br><br></td>
 </tr>
 <tr>
-<td><a href="get-string/">getString</a></td>
-<td><code>abstract fun getString(index:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><code>Int</code></a><code>):</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><code>String</code></a><code>?</code></td>
+<td><a name="com.squareup.sqldelight.db/SqlCursor/getDouble/#kotlin.Int/PointingToDeclaration/"></a><a href="get-double/">getDouble</a></td>
+<td><a name="com.squareup.sqldelight.db/SqlCursor/getDouble/#kotlin.Int/PointingToDeclaration/"></a>[common]  <br>Content  <br>abstract fun <a href="get-double/">getDouble</a>(index: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a>?  <br><br><br></td>
 </tr>
 <tr>
-<td><a href="next/">next</a></td>
-<td><code>abstract fun next():</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><code>Boolean</code></a><br>Move to the next row in the result set.</td>
+<td><a name="com.squareup.sqldelight.db/SqlCursor/getLong/#kotlin.Int/PointingToDeclaration/"></a><a href="get-long/">getLong</a></td>
+<td><a name="com.squareup.sqldelight.db/SqlCursor/getLong/#kotlin.Int/PointingToDeclaration/"></a>[common]  <br>Content  <br>abstract fun <a href="get-long/">getLong</a>(index: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a>?  <br><br><br></td>
 </tr>
-</tbody>
-</table>
-<h3 id="inherited-functions">Inherited Functions</h3>
-<table>
-<thead>
 <tr>
-<th>Name</th>
-<th>Summary</th>
+<td><a name="com.squareup.sqldelight.db/SqlCursor/getString/#kotlin.Int/PointingToDeclaration/"></a><a href="get-string/">getString</a></td>
+<td><a name="com.squareup.sqldelight.db/SqlCursor/getString/#kotlin.Int/PointingToDeclaration/"></a>[common]  <br>Content  <br>abstract fun <a href="get-string/">getString</a>(index: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?  <br><br><br></td>
 </tr>
-</thead>
-<tbody>
 <tr>
-<td><a href="../-closeable/close/">close</a><br>(js, native)</td>
-<td><code>abstract fun close():</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><code>Unit</code></a><br>Close any resources backed by this object.</td>
+<td><a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a><a href="../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">hashCode</a></td>
+<td><a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a>[common]  <br>Content  <br>open fun <a href="../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">hashCode</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>  <br><br><br></td>
 </tr>
-</tbody>
-</table>
-<h3 id="extension-functions">Extension Functions</h3>
-<table>
-<thead>
 <tr>
-<th>Name</th>
-<th>Summary</th>
+<td><a name="com.squareup.sqldelight.db/SqlCursor/next/#/PointingToDeclaration/"></a><a href="next/">next</a></td>
+<td><a name="com.squareup.sqldelight.db/SqlCursor/next/#/PointingToDeclaration/"></a>[common]  <br>Content  <br>abstract fun <a href="next/">next</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>  <br>More info  <br>Move to the next row in the result set.  <br><br><br></td>
 </tr>
-</thead>
-<tbody>
 <tr>
-<td><a href="../use/">use</a><br>(JVM, js, native)</td>
-<td><code>expect fun &lt;T :</code><a href="../-closeable/"><code>Closeable</code></a><code>?, R&gt;</code><a href="../use/#T"><code>T</code></a><code>.use(body: (</code><a href="../use/#T"><code>T</code></a><code>) -&gt;</code><a href="../use/#R"><code>R</code></a><code>):</code><a href="../use/#R"><code>R</code></a><br>Run <a href="../use/#com.squareup.sqldelight.db$use(com.squareup.sqldelight.db.use.T, kotlin.Function1((com.squareup.sqldelight.db.use.T, com.squareup.sqldelight.db.use.R)))/body">body</a> on the receiver and call <a href="../-closeable/close/">Closeable.close</a> before returning or throwing.</td>
+<td><a name="kotlin/Any/toString/#/PointingToDeclaration/"></a><a href="../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">toString</a></td>
+<td><a name="kotlin/Any/toString/#/PointingToDeclaration/"></a>[common]  <br>Content  <br>open fun <a href="../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">toString</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>  <br><br><br></td>
 </tr>
 </tbody>
 </table>

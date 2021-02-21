@@ -21,7 +21,7 @@
     
     
       
-        <title>wrapConnection - SQLDelight - SQLDelight</title>
+        <title>wrapConnection   - SQLDelight - SQLDelight</title>
       
     
     
@@ -93,7 +93,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              wrapConnection - SQLDelight
+              wrapConnection   - SQLDelight
             
           </span>
         </div>
@@ -2505,15 +2505,14 @@
                   
                 
                 
-                <p><a href="../../">native-driver</a> / <a href="../">com.squareup.sqldelight.drivers.native</a> / <a href="./">wrapConnection</a></p>
+                <p>//<a href="../../">native-driver</a>/<a href="../">com.squareup.sqldelight.drivers.native</a>/<a href="./">wrapConnection</a></p>
 <h1 id="wrapconnection">wrapConnection</h1>
-<p><code>fun wrapConnection(connection: &lt;ERROR CLASS&gt;, block: (&lt;ERROR CLASS&gt;) -&gt;</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><code>Unit</code></a><code>):</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><code>Unit</code></a></p>
-<p><strong>Platform and version requirements:</strong> native</p>
-<p>Sqliter's DatabaseConfiguration takes lambda arguments for it's create and upgrade operations,
-which each take a DatabaseConnection argument. Use wrapConnection to have SqlDelight access this
-passed connection and avoid the pooling that the full SqlDriver instance performs.</p>
-<p>Note that queries created during this operation will be cleaned up. If holding onto a cursor from
-a wrap call, it will no longer be viable.</p>
+<p>[native]<br />
+Content<br />
+fun <a href="./">wrapConnection</a>(connection: DatabaseConnection, block: (SqlDriver) -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>)<br />
+More info  </p>
+<p>Sqliter's DatabaseConfiguration takes lambda arguments for it's create and upgrade operations, which each take a DatabaseConnection argument. Use wrapConnection to have SqlDelight access this passed connection and avoid the pooling that the full SqlDriver instance performs.</p>
+<p>Note that queries created during this operation will be cleaned up. If holding onto a cursor from a wrap call, it will no longer be viable.</p>
                 
                   
                 

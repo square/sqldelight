@@ -21,7 +21,7 @@
     
     
       
-        <title>transactionWithResult - SQLDelight - SQLDelight</title>
+        <title>transactionWithResult   - SQLDelight - SQLDelight</title>
       
     
     
@@ -93,7 +93,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              transactionWithResult - SQLDelight
+              transactionWithResult   - SQLDelight
             
           </span>
         </div>
@@ -2496,8 +2496,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#exceptions" class="md-nav__link">
-    Exceptions
+  <a href="#throws" class="md-nav__link">
+    Throws
   </a>
   
 </li>
@@ -2522,14 +2522,28 @@
                   
                 
                 
-                <p><a href="../../../">runtime</a> / <a href="../../">com.squareup.sqldelight</a> / <a href="../">TransacterImpl</a> / <a href="./">transactionWithResult</a></p>
+                <p>//<a href="../../../">runtime</a>/<a href="../../">com.squareup.sqldelight</a>/<a href="../">TransacterImpl</a>/<a href="./">transactionWithResult</a></p>
 <h1 id="transactionwithresult">transactionWithResult</h1>
-<p><code>open fun &lt;R&gt; transactionWithResult(noEnclosing:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><code>Boolean</code></a><code>, bodyWithReturn:</code><a href="../../-transaction-with-return/"><code>TransactionWithReturn</code></a><code>&lt;</code><a href="./#R"><code>R</code></a><code>&gt;.() -&gt;</code><a href="./#R"><code>R</code></a><code>):</code><a href="./#R"><code>R</code></a></p>
-<p>Overrides <a href="../../-transacter/transaction-with-result/">Transacter.transactionWithResult</a></p>
-<p>Starts a <a href="../../-transacter/-transaction/">Transaction</a> and runs <a href="#">body</a> in that transaction.</p>
-<h3 id="exceptions">Exceptions</h3>
-<p><code>IllegalStateException</code> - if <a href="../../-transacter/transaction-with-result/#com.squareup.sqldelight.Transacter$transactionWithResult(kotlin.Boolean, kotlin.Function1((com.squareup.sqldelight.TransactionWithReturn((com.squareup.sqldelight.Transacter.transactionWithResult.R)), )))/noEnclosing">noEnclosing</a> is true and there is already an active
-<a href="../../-transacter/-transaction/">Transaction</a> on this thread.</p>
+<p>[common]<br />
+Content<br />
+open override fun &lt;<a href="./">R</a>&gt; <a href="./">transactionWithResult</a>(noEnclosing: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, bodyWithReturn: <a href="../../-transaction-with-return/">TransactionWithReturn</a>&lt;<a href="./">R</a>&gt;.() -&gt; <a href="./">R</a>): <a href="./">R</a><br />
+More info  </p>
+<p>Starts a <a href="../../-transacter/-transaction/">Transaction</a> and runs body in that transaction.</p>
+<h4 id="throws">Throws</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a name="com.squareup.sqldelight/TransacterImpl/transactionWithResult/#kotlin.Boolean#kotlin.Function1[com.squareup.sqldelight.TransactionWithReturn[TypeParam(bounds=[kotlin.Any?])],TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/"></a><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-illegal-state-exception/index.html">kotlin.IllegalStateException</a></td>
+<td><a name="com.squareup.sqldelight/TransacterImpl/transactionWithResult/#kotlin.Boolean#kotlin.Function1[com.squareup.sqldelight.TransactionWithReturn[TypeParam(bounds=[kotlin.Any?])],TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/"></a><br><br>if noEnclosing is true and there is already an active <a href="../../-transacter/-transaction/">Transaction</a> on this thread.<br><br></td>
+</tr>
+</tbody>
+</table>
                 
                   
                 

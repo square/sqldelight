@@ -2627,7 +2627,7 @@ which specifies the Kotlin type of the column in the generated interface.</p>
   <span class="n">some_double_prec</span> <span class="n">DOUBLE</span> <span class="k">PRECISION</span><span class="p">,</span> <span class="c1">-- Retrieved as Double</span>
   <span class="n">some_double</span> <span class="n">DOUBLE</span><span class="p">,</span>                <span class="c1">-- Retrieved as Double</span>
   <span class="n">some_date</span> <span class="nb">DATE</span><span class="p">,</span>                    <span class="c1">-- Retrieved as String</span>
-  <span class="n">some_time</span> <span class="n">TIME</span><span class="p">,</span>                    <span class="c1">-- Retrieved as String</span>
+  <span class="n">some_time</span> <span class="k">TIME</span><span class="p">,</span>                    <span class="c1">-- Retrieved as String</span>
   <span class="n">some_datetime</span> <span class="n">DATETIME</span><span class="p">,</span>            <span class="c1">-- Retrieved as String</span>
   <span class="n">some_timestamp</span> <span class="k">TIMESTAMP</span><span class="p">,</span>          <span class="c1">-- Retrieved as String</span>
   <span class="n">some_year</span> <span class="k">YEAR</span><span class="p">,</span>                    <span class="c1">-- Retrieved as String</span>
@@ -2660,7 +2660,12 @@ which specifies the Kotlin type of the column in the generated interface.</p>
 
 <p>However, creating the <code>Database</code> will require you to provide a <code>ColumnAdapter</code> which knows how to map between the database type and your custom type:</p>
 <div class="codehilite"><pre><span></span><code><span class="k">val</span> <span class="py">listOfStringsAdapter</span> <span class="p">=</span> <span class="k">object</span> <span class="p">:</span> <span class="nc">ColumnAdapter</span><span class="p">&lt;</span><span class="n">List</span><span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;,</span> <span class="n">String</span><span class="p">&gt;</span> <span class="p">{</span>
-  <span class="k">override</span> <span class="k">fun</span> <span class="nf">decode</span><span class="p">(</span><span class="n">databaseValue</span><span class="p">:</span> <span class="n">String</span><span class="p">)</span> <span class="p">=</span> <span class="n">databaseValue</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;,&quot;</span><span class="p">)</span>
+  <span class="k">override</span> <span class="k">fun</span> <span class="nf">decode</span><span class="p">(</span><span class="n">databaseValue</span><span class="p">:</span> <span class="n">String</span><span class="p">)</span> <span class="p">=</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">databaseValue</span><span class="p">.</span><span class="n">isEmpty</span><span class="p">())</span> <span class="p">{</span>
+      <span class="n">listOf</span><span class="p">()</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="n">databaseValue</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;,&quot;</span><span class="p">)</span>
+    <span class="p">}</span>
   <span class="k">override</span> <span class="k">fun</span> <span class="nf">encode</span><span class="p">(</span><span class="n">value</span><span class="p">:</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;)</span> <span class="p">=</span> <span class="n">value</span><span class="p">.</span><span class="n">joinToString</span><span class="p">(</span><span class="n">separator</span> <span class="p">=</span> <span class="s">&quot;,&quot;</span><span class="p">)</span>
 <span class="p">}</span>
 

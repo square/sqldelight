@@ -1,9 +1,5 @@
-$dokka.format:gfm
+$dokka.format:gfm-v1
 $dokka.linkExtension:md
-$dokka.location:com.squareup.sqldelight.runtime.rx3$asObservable(com.squareup.sqldelight.Query((com.squareup.sqldelight.runtime.rx3.asObservable.T)), io.reactivex.rxjava3.core.Scheduler)com.squareup.sqldelight.runtime.rx3/com.squareup.sqldelight.-query/as-observable.md
-$dokka.location:com.squareup.sqldelight.runtime.rx3$mapToList(io.reactivex.rxjava3.core.Observable((com.squareup.sqldelight.Query((com.squareup.sqldelight.runtime.rx3.mapToList.T)))))com.squareup.sqldelight.runtime.rx3/io.reactivex.rxjava3.core.-observable/map-to-list.md
-$dokka.location:com.squareup.sqldelight.runtime.rx3$mapToOne(io.reactivex.rxjava3.core.Observable((com.squareup.sqldelight.Query((com.squareup.sqldelight.runtime.rx3.mapToOne.T)))))com.squareup.sqldelight.runtime.rx3/io.reactivex.rxjava3.core.-observable/map-to-one.md
-$dokka.location:com.squareup.sqldelight.runtime.rx3$mapToOneNonNull(io.reactivex.rxjava3.core.Observable((com.squareup.sqldelight.Query((com.squareup.sqldelight.runtime.rx3.mapToOneNonNull.T)))))com.squareup.sqldelight.runtime.rx3/io.reactivex.rxjava3.core.-observable/map-to-one-non-null.md
-$dokka.location:com.squareup.sqldelight.runtime.rx3$mapToOneOrDefault(io.reactivex.rxjava3.core.Observable((com.squareup.sqldelight.Query((com.squareup.sqldelight.runtime.rx3.mapToOneOrDefault.T)))), com.squareup.sqldelight.runtime.rx3.mapToOneOrDefault.T)com.squareup.sqldelight.runtime.rx3/io.reactivex.rxjava3.core.-observable/map-to-one-or-default.md
-$dokka.location:com.squareup.sqldelight.runtime.rx3$mapToOptional(io.reactivex.rxjava3.core.Observable((com.squareup.sqldelight.Query((com.squareup.sqldelight.runtime.rx3.mapToOptional.T)))))com.squareup.sqldelight.runtime.rx3/io.reactivex.rxjava3.core.-observable/map-to-optional.md
+
 com.squareup.sqldelight.runtime.rx3
+

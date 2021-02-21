@@ -21,7 +21,7 @@
     
     
       
-        <title>Transacter - SQLDelight - SQLDelight</title>
+        <title>Transacter   - SQLDelight - SQLDelight</title>
       
     
     
@@ -93,7 +93,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Transacter - SQLDelight
+              Transacter   - SQLDelight
             
           </span>
         </div>
@@ -2536,11 +2536,11 @@
                   
                 
                 
-                <p><a href="../../">runtime</a> / <a href="../">com.squareup.sqldelight</a> / <a href="./">Transacter</a></p>
+                <p>//<a href="../../">runtime</a>/<a href="../">com.squareup.sqldelight</a>/<a href="./">Transacter</a></p>
 <h1 id="transacter">Transacter</h1>
-<p><code>interface Transacter</code></p>
+<p>[common] interface <a href="./">Transacter</a></p>
 <p>A transaction-aware <a href="../../com.squareup.sqldelight.db/-sql-driver/">SqlDriver</a> wrapper which can begin a <a href="-transaction/">Transaction</a> on the current connection.</p>
-<h3 id="types">Types</h3>
+<h2 id="types">Types</h2>
 <table>
 <thead>
 <tr>
@@ -2550,12 +2550,12 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="-transaction/">Transaction</a></td>
-<td><code>abstract class Transaction :</code><a href="../-transaction-callbacks/"><code>TransactionCallbacks</code></a><br>A SQL transaction. Can be created through the driver via <a href="../../com.squareup.sqldelight.db/-sql-driver/new-transaction/">SqlDriver.newTransaction</a> or through an implementation of <a href="./">Transacter</a> by calling <a href="transaction/">Transacter.transaction</a>.</td>
+<td><a name="com.squareup.sqldelight/Transacter.Transaction///PointingToDeclaration/"></a><a href="-transaction/">Transaction</a></td>
+<td><a name="com.squareup.sqldelight/Transacter.Transaction///PointingToDeclaration/"></a>[common]  <br>Content  <br>abstract class <a href="-transaction/">Transaction</a> : <a href="../-transaction-callbacks/">TransactionCallbacks</a>  <br>More info  <br>A SQL transaction.  <br><br><br></td>
 </tr>
 </tbody>
 </table>
-<h3 id="functions">Functions</h3>
+<h2 id="functions">Functions</h2>
 <table>
 <thead>
 <tr>
@@ -2565,27 +2565,37 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="transaction/">transaction</a></td>
-<td><code>abstract fun transaction(noEnclosing:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><code>Boolean</code></a><code>= false, body:</code><a href="../-transaction-without-return/"><code>TransactionWithoutReturn</code></a><code>.() -&gt;</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><code>Unit</code></a><code>):</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><code>Unit</code></a><br>Starts a <a href="-transaction/">Transaction</a> and runs <a href="transaction/#com.squareup.sqldelight.Transacter$transaction(kotlin.Boolean, kotlin.Function1((com.squareup.sqldelight.TransactionWithoutReturn, kotlin.Unit)))/body">body</a> in that transaction.</td>
+<td><a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a><a href="../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">equals</a></td>
+<td><a name="kotlin/Any/equals/#kotlin.Any?/PointingToDeclaration/"></a>[common]  <br>Content  <br>open operator fun <a href="../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">equals</a>(other: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>?): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>  <br><br><br></td>
 </tr>
 <tr>
-<td><a href="transaction-with-result/">transactionWithResult</a></td>
-<td><code>abstract fun &lt;R&gt; transactionWithResult(noEnclosing:</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><code>Boolean</code></a><code>= false, bodyWithReturn:</code><a href="../-transaction-with-return/"><code>TransactionWithReturn</code></a><code>&lt;</code><a href="transaction-with-result/#R"><code>R</code></a><code>&gt;.() -&gt;</code><a href="transaction-with-result/#R"><code>R</code></a><code>):</code><a href="transaction-with-result/#R"><code>R</code></a><br>Starts a <a href="-transaction/">Transaction</a> and runs <a href="#">body</a> in that transaction.</td>
+<td><a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a><a href="../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">hashCode</a></td>
+<td><a name="kotlin/Any/hashCode/#/PointingToDeclaration/"></a>[common]  <br>Content  <br>open fun <a href="../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">hashCode</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="kotlin/Any/toString/#/PointingToDeclaration/"></a><a href="../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">toString</a></td>
+<td><a name="kotlin/Any/toString/#/PointingToDeclaration/"></a>[common]  <br>Content  <br>open fun <a href="../../com.squareup.sqldelight.logs/-statement-parameter-interceptor/#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F603875650">toString</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="com.squareup.sqldelight/Transacter/transaction/#kotlin.Boolean#kotlin.Function1[com.squareup.sqldelight.TransactionWithoutReturn,kotlin.Unit]/PointingToDeclaration/"></a><a href="transaction/">transaction</a></td>
+<td><a name="com.squareup.sqldelight/Transacter/transaction/#kotlin.Boolean#kotlin.Function1[com.squareup.sqldelight.TransactionWithoutReturn,kotlin.Unit]/PointingToDeclaration/"></a>[common]  <br>Content  <br>abstract fun <a href="transaction/">transaction</a>(noEnclosing: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> = false, body: <a href="../-transaction-without-return/">TransactionWithoutReturn</a>.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>)  <br>More info  <br>Starts a <a href="-transaction/">Transaction</a> and runs body in that transaction.  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="com.squareup.sqldelight/Transacter/transactionWithResult/#kotlin.Boolean#kotlin.Function1[com.squareup.sqldelight.TransactionWithReturn[TypeParam(bounds=[kotlin.Any?])],TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/"></a><a href="transaction-with-result/">transactionWithResult</a></td>
+<td><a name="com.squareup.sqldelight/Transacter/transactionWithResult/#kotlin.Boolean#kotlin.Function1[com.squareup.sqldelight.TransactionWithReturn[TypeParam(bounds=[kotlin.Any?])],TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/"></a>[common]  <br>Content  <br>abstract fun &lt;<a href="transaction-with-result/">R</a>&gt; <a href="transaction-with-result/">transactionWithResult</a>(noEnclosing: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> = false, bodyWithReturn: <a href="../-transaction-with-return/">TransactionWithReturn</a>&lt;<a href="transaction-with-result/">R</a>&gt;.() -&gt; <a href="transaction-with-result/">R</a>): <a href="transaction-with-result/">R</a>  <br>More info  <br>Starts a <a href="-transaction/">Transaction</a> and runs body in that transaction.  <br><br><br></td>
 </tr>
 </tbody>
 </table>
-<h3 id="inheritors">Inheritors</h3>
+<h2 id="inheritors">Inheritors</h2>
 <table>
 <thead>
 <tr>
 <th>Name</th>
-<th>Summary</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="../-transacter-impl/">TransacterImpl</a></td>
-<td><code>abstract class TransacterImpl :</code><a href="./"><code>Transacter</code></a><br>A transaction-aware <a href="../../com.squareup.sqldelight.db/-sql-driver/">SqlDriver</a> wrapper which can begin a <a href="-transaction/">Transaction</a> on the current connection.</td>
+<td><a name="com.squareup.sqldelight/TransacterImpl///PointingToDeclaration/"></a><a href="../-transacter-impl/">TransacterImpl</a></td>
 </tr>
 </tbody>
 </table>

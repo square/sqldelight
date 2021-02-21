@@ -21,7 +21,7 @@
     
     
       
-        <title>Package com.squareup.sqldelight.drivers.native - SQLDelight - SQLDelight</title>
+        <title>Package com.squareup.sqldelight.drivers.native   - SQLDelight - SQLDelight</title>
       
     
     
@@ -93,7 +93,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Package com.squareup.sqldelight.drivers.native - SQLDelight
+              Package com.squareup.sqldelight.drivers.native   - SQLDelight
             
           </span>
         </div>
@@ -2484,6 +2484,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon">
@@ -2494,29 +2496,16 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#package-comsquareupsqldelightdriversnative" class="md-nav__link">
-    Package com.squareup.sqldelight.drivers.native
-  </a>
-  
-    <nav class="md-nav" aria-label="Package com.squareup.sqldelight.drivers.native">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#types" class="md-nav__link">
     Types
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#functions" class="md-nav__link">
     Functions
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2540,12 +2529,9 @@
                   
                 
                 
-                  <h1>Package com.squareup.sqldelight.drivers.native - SQLDelight</h1>
-                
-                <p><a href="../">native-driver</a> / <a href="./">com.squareup.sqldelight.drivers.native</a></p>
-<h2 id="package-comsquareupsqldelightdriversnative">Package com.squareup.sqldelight.drivers.native</h2>
-<p><strong>Platform and version requirements:</strong> native</p>
-<h3 id="types">Types</h3>
+                <p>//<a href="../">native-driver</a>/<a href="./">com.squareup.sqldelight.drivers.native</a></p>
+<h1 id="package-comsquareupsqldelightdriversnative">Package com.squareup.sqldelight.drivers.native</h1>
+<h2 id="types">Types</h2>
 <table>
 <thead>
 <tr>
@@ -2555,16 +2541,16 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="-connection-wrapper/">ConnectionWrapper</a><br>(native)</td>
-<td><code>sealed class ConnectionWrapper</code></td>
+<td><a name="com.squareup.sqldelight.drivers.native/ConnectionWrapper///PointingToDeclaration/"></a><a href="-connection-wrapper/">ConnectionWrapper</a></td>
+<td><a name="com.squareup.sqldelight.drivers.native/ConnectionWrapper///PointingToDeclaration/"></a>[native]  <br>Content  <br>sealed class <a href="-connection-wrapper/">ConnectionWrapper</a> : SqlDriver  <br><br><br></td>
 </tr>
 <tr>
-<td><a href="-native-sqlite-driver/">NativeSqliteDriver</a><br>(native)</td>
-<td><code>class NativeSqliteDriver :</code><a href="-connection-wrapper/"><code>ConnectionWrapper</code></a><br>Native driver implementation.</td>
+<td><a name="com.squareup.sqldelight.drivers.native/NativeSqliteDriver///PointingToDeclaration/"></a><a href="-native-sqlite-driver/">NativeSqliteDriver</a></td>
+<td><a name="com.squareup.sqldelight.drivers.native/NativeSqliteDriver///PointingToDeclaration/"></a>[native]  <br>Content  <br>class <a href="-native-sqlite-driver/">NativeSqliteDriver</a>(<strong>databaseManager</strong>: DatabaseManager) : <a href="-connection-wrapper/">ConnectionWrapper</a>, SqlDriver  <br>More info  <br>Native driver implementation.  <br><br><br></td>
 </tr>
 </tbody>
 </table>
-<h3 id="functions">Functions</h3>
+<h2 id="functions">Functions</h2>
 <table>
 <thead>
 <tr>
@@ -2574,8 +2560,8 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="wrap-connection/">wrapConnection</a><br>(native)</td>
-<td><code>fun wrapConnection(connection: &lt;ERROR CLASS&gt;, block: (&lt;ERROR CLASS&gt;) -&gt;</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><code>Unit</code></a><code>):</code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><code>Unit</code></a><br>Sqliter's DatabaseConfiguration takes lambda arguments for it's create and upgrade operations, which each take a DatabaseConnection argument. Use wrapConnection to have SqlDelight access this passed connection and avoid the pooling that the full SqlDriver instance performs.</td>
+<td><a name="com.squareup.sqldelight.drivers.native//wrapConnection/#co.touchlab.sqliter.DatabaseConnection#kotlin.Function1[com.squareup.sqldelight.db.SqlDriver,kotlin.Unit]/PointingToDeclaration/"></a><a href="wrap-connection/">wrapConnection</a></td>
+<td><a name="com.squareup.sqldelight.drivers.native//wrapConnection/#co.touchlab.sqliter.DatabaseConnection#kotlin.Function1[com.squareup.sqldelight.db.SqlDriver,kotlin.Unit]/PointingToDeclaration/"></a>[native]  <br>Content  <br>fun <a href="wrap-connection/">wrapConnection</a>(connection: DatabaseConnection, block: (SqlDriver) -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>)  <br>More info  <br>Sqliter's DatabaseConfiguration takes lambda arguments for it's create and upgrade operations, which each take a DatabaseConnection argument.  <br><br><br></td>
 </tr>
 </tbody>
 </table>

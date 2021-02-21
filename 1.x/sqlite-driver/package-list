@@ -1,4 +1,5 @@
-$dokka.format:gfm
+$dokka.format:gfm-v1
 $dokka.linkExtension:md
 
 com.squareup.sqldelight.sqlite.driver
+

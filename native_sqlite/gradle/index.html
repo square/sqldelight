@@ -2595,6 +2595,10 @@
     <span class="c1">// The dialect version you would like to target</span>
     <span class="c1">// Defaults to &quot;sqlite:3.18&quot;</span>
     <span class="n">dialect</span> <span class="o">=</span> <span class="s2">&quot;sqlite:3.24&quot;</span>
+
+    <span class="c1">// If set to true, migration files will fail during compilation if there are errors in them.</span>
+    <span class="c1">// Defaults to false</span>
+    <span class="n">verifyMigrations</span> <span class="o">=</span> <span class="kc">true</span>
   <span class="o">}</span>
   <span class="c1">// For native targets, whether sqlite should be automatically linked.</span>
   <span class="c1">// Defaults to true.</span>
@@ -2612,6 +2616,7 @@
     <span class="n">schemaOutputDirectory</span> <span class="p">=</span> <span class="n">file</span><span class="p">(</span><span class="s">&quot;build/dbs&quot;</span><span class="p">)</span>
     <span class="n">dependency</span><span class="p">(</span><span class="n">project</span><span class="p">(</span><span class="s">&quot;:OtherProject&quot;</span><span class="p">))</span>
     <span class="n">dialect</span> <span class="p">=</span> <span class="s">&quot;sqlite:3.24&quot;</span>
+    <span class="n">verifyMigrations</span> <span class="p">=</span> <span class="k">true</span>
   <span class="p">}</span>
   <span class="n">linkSqlite</span> <span class="p">=</span> <span class="k">false</span>
 <span class="p">}</span>

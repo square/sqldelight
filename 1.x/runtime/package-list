@@ -1,6 +1,8 @@
-$dokka.format:gfm
+$dokka.format:gfm-v1
 $dokka.linkExtension:md
 
 com.squareup.sqldelight
 com.squareup.sqldelight.db
+com.squareup.sqldelight.internal
 com.squareup.sqldelight.logs
+

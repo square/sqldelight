@@ -21,7 +21,7 @@
     
     
       
-        <title>querySubtype - SQLDelight - SQLDelight</title>
+        <title>querySubtype   - SQLDelight - SQLDelight</title>
       
     
     
@@ -93,7 +93,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              querySubtype - SQLDelight
+              querySubtype   - SQLDelight
             
           </span>
         </div>
@@ -2505,18 +2505,20 @@
                   
                 
                 
-                <p><a href="../../../">sqldelight-compiler</a> / <a href="../../">com.squareup.sqldelight.core.compiler</a> / <a href="../">SelectQueryGenerator</a> / <a href="./">querySubtype</a></p>
+                <p>//<a href="../../../">sqldelight-compiler</a>/<a href="../../">com.squareup.sqldelight.core.compiler</a>/<a href="../">SelectQueryGenerator</a>/<a href="./">querySubtype</a></p>
 <h1 id="querysubtype">querySubtype</h1>
-<p><code>fun querySubtype(): TypeSpec</code></p>
+<p>[jvm]<br />
+Content<br />
+fun <a href="./">querySubtype</a>(): TypeSpec<br />
+More info  </p>
 <p>The private query subtype for this specific query.</p>
-<div class="codehilite"><pre><span></span><code>private class SelectForIdQuery&lt;out T&gt;(
-  private val _id: Int,
-  mapper: (SqlResultSet) -&gt; T
-) : Query&lt;T&gt;(statement, selectForId, mapper) {
-private inner class SelectForIdQuery&lt;out T&gt;(
-  private val _id: Int, mapper: (Cursor) -&gt; T
-): Query&lt;T&gt;(database.helper, selectForId, mapper)
-</code></pre></div>
+<p>private class SelectForIdQuery<out T>(<br />
+  private val _id: Int,<br />
+  mapper: (SqlResultSet) -&gt; T<br />
+) : Query<T>(statement, selectForId, mapper) {<br />
+private inner class SelectForIdQuery<out T>(<br />
+  private val _id: Int, mapper: (Cursor) -&gt; T<br />
+): Query<T>(database.helper, selectForId, mapper)  </p>
                 
                   
                 
