@@ -72,6 +72,30 @@
      <lastmod>2021-02-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://cashapp.github.io/sqldelight/1.x/coroutines-extensions/</loc>
+     <lastmod>2021-02-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://cashapp.github.io/sqldelight/1.x/rxjava2-extensions/</loc>
+     <lastmod>2021-02-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://cashapp.github.io/sqldelight/1.x/rxjava3-extensions/</loc>
+     <lastmod>2021-02-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://cashapp.github.io/sqldelight/1.x/android-paging/</loc>
+     <lastmod>2021-02-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://cashapp.github.io/sqldelight/1.x/android-driver/</loc>
+     <lastmod>2021-02-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://cashapp.github.io/sqldelight/1.x/runtime/</loc>
+     <lastmod>2021-02-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://cashapp.github.io/sqldelight/android_sqlite/resources/</loc>
      <lastmod>2021-02-21</lastmod>
      <changefreq>daily</changefreq>
@@ -120,6 +144,14 @@
      <lastmod>2021-02-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://cashapp.github.io/sqldelight/1.x/coroutines-extensions/</loc>
+     <lastmod>2021-02-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://cashapp.github.io/sqldelight/1.x/runtime/</loc>
+     <lastmod>2021-02-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://cashapp.github.io/sqldelight/jvm_mysql/</loc>
      <lastmod>2021-02-21</lastmod>
      <changefreq>daily</changefreq>
@@ -153,6 +185,14 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://cashapp.github.io/sqldelight/jvm_mysql/gradle/</loc>
+     <lastmod>2021-02-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://cashapp.github.io/sqldelight/1.x/jdbc-driver/</loc>
+     <lastmod>2021-02-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://cashapp.github.io/sqldelight/1.x/runtime/</loc>
      <lastmod>2021-02-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -192,6 +232,14 @@
      <lastmod>2021-02-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://cashapp.github.io/sqldelight/1.x/jdbc-driver/</loc>
+     <lastmod>2021-02-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://cashapp.github.io/sqldelight/1.x/runtime/</loc>
+     <lastmod>2021-02-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://cashapp.github.io/sqldelight/jvm_h2/</loc>
      <lastmod>2021-02-21</lastmod>
      <changefreq>daily</changefreq>
@@ -225,6 +273,14 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://cashapp.github.io/sqldelight/jvm_h2/gradle/</loc>
+     <lastmod>2021-02-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://cashapp.github.io/sqldelight/1.x/jdbc-driver/</loc>
+     <lastmod>2021-02-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://cashapp.github.io/sqldelight/1.x/runtime/</loc>
      <lastmod>2021-02-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -265,6 +321,18 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://cashapp.github.io/sqldelight/native_sqlite/gradle/</loc>
+     <lastmod>2021-02-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://cashapp.github.io/sqldelight/1.x/coroutines-extensions/</loc>
+     <lastmod>2021-02-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://cashapp.github.io/sqldelight/1.x/native-driver/</loc>
+     <lastmod>2021-02-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://cashapp.github.io/sqldelight/1.x/runtime/</loc>
      <lastmod>2021-02-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -309,6 +377,26 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://cashapp.github.io/sqldelight/jvm_sqlite/gradle/</loc>
+     <lastmod>2021-02-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://cashapp.github.io/sqldelight/1.x/coroutines-extensions/</loc>
+     <lastmod>2021-02-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://cashapp.github.io/sqldelight/1.x/rxjava2-extensions/</loc>
+     <lastmod>2021-02-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://cashapp.github.io/sqldelight/1.x/rxjava3-extensions/</loc>
+     <lastmod>2021-02-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://cashapp.github.io/sqldelight/1.x/sqlite-driver/</loc>
+     <lastmod>2021-02-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://cashapp.github.io/sqldelight/1.x/runtime/</loc>
      <lastmod>2021-02-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
