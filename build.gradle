@@ -17,7 +17,6 @@ buildscript {
   }
 
   dependencies {
-    classpath deps.plugins.download
     classpath deps.plugins.kotlin
     classpath deps.plugins.dokka
     classpath deps.plugins.intellij
