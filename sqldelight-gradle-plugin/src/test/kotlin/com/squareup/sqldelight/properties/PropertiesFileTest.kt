@@ -18,6 +18,7 @@ class PropertiesFileTest {
 
     GradleRunner.create()
       .withProjectDir(fixtureRoot)
+      .withPluginClasspath()
       .withArguments("clean", "generateMainDatabaseInterface", "--stacktrace")
       .build()
 

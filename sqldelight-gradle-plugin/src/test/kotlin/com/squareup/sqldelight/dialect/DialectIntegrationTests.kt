@@ -17,6 +17,7 @@ class DialectIntegrationTests {
 
     val runner = GradleRunner.create()
       .withProjectDir(integrationRoot)
+      .withPluginClasspath()
       .withArguments("clean", "check", "--stacktrace")
 
     val result = runner.build()
@@ -32,6 +33,7 @@ class DialectIntegrationTests {
 
     val runner = GradleRunner.create()
       .withProjectDir(integrationRoot)
+      .withPluginClasspath()
       .withArguments("clean", "check", "--stacktrace")
 
     val result = runner.build()
@@ -47,6 +49,7 @@ class DialectIntegrationTests {
 
     val runner = GradleRunner.create()
       .withProjectDir(integrationRoot)
+      .withPluginClasspath()
       .withArguments("clean", "generateMainMyDatabaseMigrations", "--stacktrace")
 
     val result = runner.build()
@@ -65,6 +68,7 @@ class DialectIntegrationTests {
 
     val runner = GradleRunner.create()
       .withProjectDir(integrationRoot)
+      .withPluginClasspath()
       .withArguments("clean", "check", "--stacktrace")
 
     val result = runner.build()
@@ -80,6 +84,7 @@ class DialectIntegrationTests {
 
     val runner = GradleRunner.create()
       .withProjectDir(integrationRoot)
+      .withPluginClasspath()
       .withArguments("clean", "check", "--stacktrace")
 
     val result = runner.build()

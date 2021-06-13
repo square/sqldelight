@@ -34,6 +34,7 @@ class IntegrationTest {
 
     val runner = GradleRunner.create()
       .withProjectDir(integrationRoot)
+      .withPluginClasspath()
       .withArguments("clean", "check", "--stacktrace")
 
     val result = runner.build()
@@ -49,6 +50,7 @@ class IntegrationTest {
 
     val runner = GradleRunner.create()
       .withProjectDir(integrationRoot)
+      .withPluginClasspath()
       .withArguments("clean", "check", "--stacktrace")
 
     val result = runner.build()
@@ -61,6 +63,7 @@ class IntegrationTest {
     fixtureRoot.resolve("build-cache").deleteRecursively()
     val gradleRunner = GradleRunner.create()
       .withProjectDir(fixtureRoot)
+      .withPluginClasspath()
 
     val firstRun = gradleRunner
       .withArguments("build", "--build-cache", "--stacktrace")
@@ -92,6 +95,7 @@ class IntegrationTest {
     fixtureRoot.resolve("build-cache").deleteRecursively()
     val gradleRunner = GradleRunner.create()
       .withProjectDir(fixtureRoot)
+      .withPluginClasspath()
 
     val firstRun = gradleRunner
       .withArguments("build", "--build-cache", "-Dorg.gradle.caching.debug=true")
@@ -114,6 +118,7 @@ class IntegrationTest {
 
     val secondRun = GradleRunner.create()
       .withProjectDir(clonedRoot)
+      .withPluginClasspath()
       .withArguments("build", "--build-cache", "-Dorg.gradle.caching.debug=true")
       .forwardOutput()
       .build()
@@ -137,6 +142,7 @@ class IntegrationTest {
 
     val runner = GradleRunner.create()
       .withProjectDir(integrationRoot)
+      .withPluginClasspath()
       .withArguments("clean", "check", "--stacktrace")
 
     val result = runner.build()
@@ -152,6 +158,7 @@ class IntegrationTest {
 
     val runner = GradleRunner.create()
       .withProjectDir(integrationRoot)
+      .withPluginClasspath()
       .withArguments("clean", "check", "--stacktrace")
 
     val result = runner.build()
@@ -169,6 +176,7 @@ class IntegrationTest {
 
     val runner = GradleRunner.create()
       .withProjectDir(integrationRoot)
+      .withPluginClasspath()
       .withArguments("clean", "connectedCheck", "--stacktrace")
 
     val result = runner.build()
@@ -188,6 +196,7 @@ class IntegrationTest {
 
     val runner = GradleRunner.create()
       .withProjectDir(integrationRoot)
+      .withPluginClasspath()
       .forwardOutput()
 
     val generateDebugResult = runner
@@ -246,6 +255,7 @@ class IntegrationTest {
 
       val runner = GradleRunner.create()
         .withProjectDir(integrationRoot)
+        .withPluginClasspath()
         .withArguments("clean", "connectedCheck", "--stacktrace")
 
       val result = runner.build()
@@ -270,6 +280,7 @@ class IntegrationTest {
 
     val runner = GradleRunner.create()
       .withProjectDir(integrationRoot)
+      .withPluginClasspath()
       .withArguments("clean", "test", "--stacktrace")
 
     val result = runner.build()
@@ -290,6 +301,7 @@ class IntegrationTest {
     val runner = GradleRunner.create()
       .forwardOutput()
       .withProjectDir(integrationRoot)
+      .withPluginClasspath()
       .withArguments("clean", "iosTest", "--stacktrace")
 
     val result = runner.build()
@@ -310,6 +322,7 @@ class IntegrationTest {
     val runner = GradleRunner.create()
       .forwardOutput()
       .withProjectDir(integrationRoot)
+      .withPluginClasspath()
       .withArguments("clean", "compileKotlinMetadata", "--stacktrace")
 
     val result = runner.build()

@@ -51,6 +51,7 @@ class MultiModuleTests {
 
     val runner = GradleRunner.create()
       .withProjectDir(integrationRoot)
+      .withPluginClasspath()
       .withArguments("clean", ":ProjectA:check", "--stacktrace")
 
     val result = runner.build()
@@ -70,6 +71,7 @@ class MultiModuleTests {
 
     val runner = GradleRunner.create()
       .withProjectDir(integrationRoot)
+      .withPluginClasspath()
       .withArguments("clean", ":AndroidProject:connectedCheck", "--stacktrace")
 
     val result = runner.build()
