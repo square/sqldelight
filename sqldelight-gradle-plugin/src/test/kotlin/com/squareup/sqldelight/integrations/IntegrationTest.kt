@@ -27,10 +27,6 @@ import java.io.File
 class IntegrationTest {
   @Test fun integrationTests() {
     val integrationRoot = File("src/test/integration")
-    val gradleRoot = File(integrationRoot, "gradle").apply {
-      mkdir()
-    }
-    File("../gradle/wrapper").copyRecursively(File(gradleRoot, "wrapper"), true)
 
     val runner = GradleRunner.create()
       .withProjectDir(integrationRoot)
@@ -43,10 +39,6 @@ class IntegrationTest {
 
   @Test fun migrationCallbackIntegrationTests() {
     val integrationRoot = File("src/test/integration-migration-callbacks")
-    val gradleRoot = File(integrationRoot, "gradle").apply {
-      mkdir()
-    }
-    File("../gradle/wrapper").copyRecursively(File(gradleRoot, "wrapper"), true)
 
     val runner = GradleRunner.create()
       .withProjectDir(integrationRoot)
@@ -135,10 +127,6 @@ class IntegrationTest {
 
   @Test fun integrationTests_multithreaded_sqlite() {
     val integrationRoot = File("src/test/multithreaded-sqlite")
-    val gradleRoot = File(integrationRoot, "gradle").apply {
-      mkdir()
-    }
-    File("../gradle/wrapper").copyRecursively(File(gradleRoot, "wrapper"), true)
 
     val runner = GradleRunner.create()
       .withProjectDir(integrationRoot)
@@ -151,10 +139,6 @@ class IntegrationTest {
 
   @Test fun integrationTestsSqlite_3_24() {
     val integrationRoot = File("src/test/integration-sqlite-3-24")
-    val gradleRoot = File(integrationRoot, "gradle").apply {
-      mkdir()
-    }
-    File("../gradle/wrapper").copyRecursively(File(gradleRoot, "wrapper"), true)
 
     val runner = GradleRunner.create()
       .withProjectDir(integrationRoot)
@@ -169,10 +153,6 @@ class IntegrationTest {
     val androidHome = androidHome()
     val integrationRoot = File("src/test/integration-android")
     File(integrationRoot, "local.properties").writeText("sdk.dir=$androidHome\n")
-    val gradleRoot = File(integrationRoot, "gradle").apply {
-      mkdir()
-    }
-    File("../gradle/wrapper").copyRecursively(File(gradleRoot, "wrapper"), true)
 
     val runner = GradleRunner.create()
       .withProjectDir(integrationRoot)
@@ -189,10 +169,6 @@ class IntegrationTest {
     val androidHome = androidHome()
     val integrationRoot = File("src/test/integration-android-variants")
     File(integrationRoot, "local.properties").writeText("sdk.dir=$androidHome\n")
-    val gradleRoot = File(integrationRoot, "gradle").apply {
-      mkdir()
-    }
-    File("../gradle/wrapper").copyRecursively(File(gradleRoot, "wrapper"), true)
 
     val runner = GradleRunner.create()
       .withProjectDir(integrationRoot)
@@ -272,10 +248,6 @@ class IntegrationTest {
     val integrationRoot = File("src/test/integration-multiplatform")
     val buildGradle = File(integrationRoot, "build.gradle").apply { deleteOnExit() }
     File(integrationRoot, "local.properties").writeText("sdk.dir=$androidHome\n")
-    val gradleRoot = File(integrationRoot, "gradle").apply {
-      mkdir()
-    }
-    File("../gradle/wrapper").copyRecursively(File(gradleRoot, "wrapper"), true)
     File(integrationRoot, "android-build.gradle").copyTo(buildGradle, overwrite = true)
 
     val runner = GradleRunner.create()
@@ -292,10 +264,6 @@ class IntegrationTest {
   fun `integration test ios target of a multiplatform project`() {
     val integrationRoot = File("src/test/integration-multiplatform")
     val buildGradle = File(integrationRoot, "build.gradle").apply { deleteOnExit() }
-    val gradleRoot = File(integrationRoot, "gradle").apply {
-      mkdir()
-    }
-    File("../gradle/wrapper").copyRecursively(File(gradleRoot, "wrapper"), true)
     File(integrationRoot, "ios-build.gradle").copyTo(buildGradle, overwrite = true)
 
     val runner = GradleRunner.create()
@@ -313,10 +281,6 @@ class IntegrationTest {
   fun `integration metadata task compiles successfully`() {
     val integrationRoot = File("src/test/integration-multiplatform")
     val buildGradle = File(integrationRoot, "build.gradle").apply { deleteOnExit() }
-    val gradleRoot = File(integrationRoot, "gradle").apply {
-      mkdir()
-    }
-    File("../gradle/wrapper").copyRecursively(File(gradleRoot, "wrapper"), true)
     File(integrationRoot, "ios-build.gradle").copyTo(buildGradle, overwrite = true)
 
     val runner = GradleRunner.create()

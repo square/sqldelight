@@ -10,10 +10,6 @@ class DialectIntegrationTests {
 
   @Test fun integrationTestsMySql() {
     val integrationRoot = File("src/test/integration-mysql")
-    val gradleRoot = File(integrationRoot, "gradle").apply {
-      mkdir()
-    }
-    File("../gradle/wrapper").copyRecursively(File(gradleRoot, "wrapper"), true)
 
     val runner = GradleRunner.create()
       .withProjectDir(integrationRoot)
@@ -26,10 +22,6 @@ class DialectIntegrationTests {
 
   @Test fun integrationTestsMySqlSchemaDefinitions() {
     val integrationRoot = File("src/test/integration-mysql-schema")
-    val gradleRoot = File(integrationRoot, "gradle").apply {
-      mkdir()
-    }
-    File("../gradle/wrapper").copyRecursively(File(gradleRoot, "wrapper"), true)
 
     val runner = GradleRunner.create()
       .withProjectDir(integrationRoot)
@@ -42,10 +34,6 @@ class DialectIntegrationTests {
 
   @Test fun integrationTestsMySqlSchemaOutput() {
     val integrationRoot = File("src/test/schema-output")
-    val gradleRoot = File(integrationRoot, "gradle").apply {
-      mkdir()
-    }
-    File("../gradle/wrapper").copyRecursively(File(gradleRoot, "wrapper"), true)
 
     val runner = GradleRunner.create()
       .withProjectDir(integrationRoot)
@@ -61,10 +49,6 @@ class DialectIntegrationTests {
 
   @Test fun integrationTestsPostgreSql() {
     val integrationRoot = File("src/test/integration-postgresql")
-    val gradleRoot = File(integrationRoot, "gradle").apply {
-      mkdir()
-    }
-    File("../gradle/wrapper").copyRecursively(File(gradleRoot, "wrapper"), true)
 
     val runner = GradleRunner.create()
       .withProjectDir(integrationRoot)
@@ -77,10 +61,6 @@ class DialectIntegrationTests {
 
   @Test fun integrationTestsHsql() {
     val integrationRoot = File("src/test/integration-hsql")
-    val gradleRoot = File(integrationRoot, "gradle").apply {
-      mkdir()
-    }
-    File("../gradle/wrapper").copyRecursively(File(gradleRoot, "wrapper"), true)
 
     val runner = GradleRunner.create()
       .withProjectDir(integrationRoot)
