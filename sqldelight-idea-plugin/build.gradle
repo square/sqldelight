@@ -7,19 +7,19 @@ plugins {
 }
 
 intellij {
-  updateSinceUntilBuild false
-  version "IC-${versions.idea}"
+  updateSinceUntilBuild = false
+  version = "IC-${versions.idea}"
   pluginName = 'SQLDelight'
-  plugins = [
+  plugins.addAll(
       "org.jetbrains.kotlin:1.4.21-release-IJ2020.1-1",
       "gradle",
       "com.intellij.java",
       "Groovy",
       "properties",
-  ]
+  )
   if (!project.version.endsWith("SNAPSHOT")) {
     patchPluginXml {
-      changeNotes({ changelog.get(project.version).toHTML() })
+      changeNotes.set(provider { changelog.get(project.version).toHTML() })
     }
   } else {
     patchPluginXml {
@@ -61,7 +61,7 @@ def getPluginToken() {
 
 publishPlugin {
   token = getPluginToken()
-  channels(isReleaseBuild() ? 'Stable' : 'EAP')
+  channels.add(isReleaseBuild() ? 'Stable' : 'EAP')
 }
 
 sourceSets {
